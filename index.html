@@ -3,72 +3,594 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – IMAGINATION</title>
+  <title>Imagine – A Text-Based Puzzle Adventure</title>
+  <meta name="description" content="Escape locked rooms using only your words and your wits. No graphics, just pure imagination. Available on iOS.">
+  
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #111111;
-      line-height: 1.6;
+    * {
       margin: 0;
-      padding: 24px;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .container {
-      max-width: 720px;
+    
+    :root {
+      --terminal-green: #00ff41;
+      --terminal-bg: #0a0a0a;
+      --text-primary: #ffffff;
+      --text-secondary: #888888;
+      --accent-cyan: #00ffff;
+    }
+    
+    body {
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', 'Consolas', monospace;
+      background: var(--terminal-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: scan 20s linear infinite;
+      pointer-events: none;
+    }
+    
+    @keyframes scan {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(50px); }
+    }
+    
+    .logo {
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--terminal-green);
+      text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+      margin-bottom: 1rem;
+      letter-spacing: 0.2em;
+      animation: glitch 3s infinite;
+    }
+    
+    @keyframes glitch {
+      0%, 100% { text-shadow: 0 0 20px rgba(0, 255, 65, 0.5); }
+      50% { text-shadow: 0 0 30px rgba(0, 255, 65, 0.8), 0 0 40px rgba(0, 255, 65, 0.3); }
+    }
+    
+    .tagline {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: var(--terminal-green);
+      color: var(--terminal-bg);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      border: 2px solid var(--terminal-green);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .cta-button:hover {
+      background: transparent;
+      color: var(--terminal-green);
+      box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+      transform: translateY(-2px);
+    }
+    
+    .coming-soon {
+      margin-top: 1rem;
+      color: var(--accent-cyan);
+      font-size: 0.9rem;
+    }
+    
+    /* Section Styles */
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      color: var(--terminal-green);
+      margin-bottom: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    
+    h2::before {
+      content: '> ';
+      color: var(--accent-cyan);
+    }
+    
+    /* About Section */
+    .about {
+      background: #111111;
+    }
+    
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    
+    .about-content p {
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
+    }
+    
+    .highlight {
+      color: var(--terminal-green);
+      font-weight: bold;
+    }
+    
+    /* Features Section */
+    .features {
+      background: var(--terminal-bg);
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .feature-card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border: 1px solid rgba(0, 255, 65, 0.2);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      border-color: var(--terminal-green);
+      box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-title {
+      font-size: 1.2rem;
+      color: var(--terminal-green);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .feature-description {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    
+    /* Screenshots Section */
+    .screenshots {
+      background: #111111;
+    }
+    
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .screenshot-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 2px solid rgba(0, 255, 65, 0.3);
+      transition: all 0.3s ease;
+      background: #0a0a0a;
+    }
+    
+    .screenshot-item:hover {
+      border-color: var(--terminal-green);
+      box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+      transform: scale(1.05);
+    }
+    
+    .screenshot-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    .screenshot-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    /* Testimonial */
+    .testimonial {
+      background: var(--terminal-bg);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .quote {
+      font-size: 1.8rem;
+      color: var(--terminal-green);
+      font-style: italic;
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      line-height: 1.6;
+    }
+    
+    .quote::before {
+      content: '"';
+    }
+    
+    .quote::after {
+      content: '"';
+    }
+    
+    .quote-author {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    
+    /* Privacy Section */
+    .privacy {
+      background: #111111;
+    }
+    
+    .privacy-content {
+      max-width: 800px;
       margin: 0 auto;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
+    
+    .privacy-item {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-left: 3px solid var(--terminal-green);
+      margin-bottom: 1.5rem;
     }
-    .updated {
-      font-size: 14px;
-      color: #555555;
-      margin-bottom: 24px;
+    
+    .privacy-item h3 {
+      color: var(--terminal-green);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
     }
-    h2 {
-      font-size: 20px;
-      margin-top: 32px;
-      margin-bottom: 8px;
+    
+    .privacy-item p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
     }
-    p {
-      margin: 0 0 16px 0;
+    
+    /* Footer */
+    footer {
+      background: var(--terminal-bg);
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(0, 255, 65, 0.2);
     }
-    a {
-      color: #007aff;
+    
+    footer a {
+      color: var(--terminal-green);
       text-decoration: none;
+      transition: color 0.3s ease;
     }
-    a:hover {
+    
+    footer a:hover {
+      color: var(--accent-cyan);
       text-decoration: underline;
+    }
+    
+    .social-links {
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      margin: 0 1rem;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 2.5rem;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+      }
+      
+      h2 {
+        font-size: 1.8rem;
+      }
+      
+      .quote {
+        font-size: 1.3rem;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .screenshot-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Terminal cursor effect */
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background: var(--terminal-green);
+      margin-left: 5px;
+      animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for Project Imagination</h1>
-    <div class="updated">Last updated: January 28, 2026</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="logo">IMAGINE<span class="cursor"></span></div>
+    <p class="tagline">
+      Games are exhausting now. This one is different.<br>
+      Zero graphics. Just text. Just your mind.
+    </p>
+    <a href="#" class="cta-button" onclick="alert('Coming Soon to the App Store! Follow for updates.'); return false;">Download on iOS</a>
+    <p class="coming-soon">Coming Soon to the App Store</p>
+  </section>
 
-    <h2>Data Collection</h2>
-    <p>
-      Project Imagination does not collect, store, or share any personal data.
-    </p>
+  <!-- About Section -->
+  <section class="about">
+    <h2>What is Imagine?</h2>
+    <div class="about-content">
+      <p>
+        <span class="highlight">Okay, real talk —</span> Games are exhausting now. Flashing lights, constant pings, 
+        "spend $5 to continue" every 2 minutes. I got tired of it and made something different.
+      </p>
+      <p>
+        It's called <span class="highlight">"Imagine"</span> — zero graphics, just text. You type what you'd do and 
+        face challenges that test different parts of how you think:
+      </p>
+      <p>
+        • Your <span class="highlight">deduction skills</span><br>
+        • Your <span class="highlight">moral reasoning</span><br>
+        • Your <span class="highlight">logical thinking</span><br>
+        • Your <span class="highlight">wisdom</span>
+      </p>
+      <p>
+        No menus. No hints. No hand-holding. Just you, a locked room, and your imagination.
+      </p>
+      <p>
+        Think <span class="highlight">escape rooms</span> meet <span class="highlight">text adventures</span>, 
+        powered by AI that actually understands what you mean.
+      </p>
+    </div>
+  </section>
 
-    <h2>AI Processing</h2>
-    <p>
-      Gameplay text entered by the user is sent to an AI gateway solely for
-      puzzle validation and game logic processing.
-    </p>
-    <p>
-      No personal information is included in these requests. Gameplay data is
-      not stored by our servers.
-    </p>
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-title">Pure Imagination</div>
+        <p class="feature-description">
+          No graphics. No distractions. Just text and your mind. Experience puzzles the way they were meant to be.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <div class="feature-title">Natural Language</div>
+        <p class="feature-description">
+          Type what you'd actually do. AI-powered understanding means no frustrating parser syntax or guessing keywords.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-title">25+ Unique Rooms</div>
+        <p class="feature-description">
+          Each room tests a different skill: logic, ethics, deduction, wisdom. Progress through increasingly complex challenges.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🔐</div>
+        <div class="feature-title">No Hand-Holding</div>
+        <p class="feature-description">
+          No tutorials. No hints (unless you ask). Puzzles designed to make you feel like a genius when you solve them.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Quick Sessions</div>
+        <p class="feature-description">
+          Play for 5 minutes or 50. Each room is self-contained. Perfect for commutes, coffee breaks, or deep focus.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-title">Terminal Aesthetic</div>
+        <p class="feature-description">
+          Classic hacker terminal vibes. Green-on-black. Monospace fonts. For those who appreciate minimalist design.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <h2>Contact</h2>
-    <p>
-      If you have any questions about this Privacy Policy, you may contact us at:
-      <br />
-      <a href="mailto:pratamesh1867@gmail.com">pratamesh1867@gmail.com</a>
+  <!-- Screenshots Section -->
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <div class="screenshot-grid">
+      <div class="screenshot-item">
+        <img src="images/s01.png" alt="Room Selection Screen" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s02.png" alt="The Locked Box Puzzle" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s03.png" alt="Riddle Challenge" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s04.png" alt="Ethical Dilemma" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s05.png" alt="Mystery Investigation" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s06.png" alt="Pattern Recognition" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s07.png" alt="Success Screen" loading="lazy">
+      </div>
+      <div class="screenshot-item">
+        <img src="images/s08.png" alt="Progress Tracking" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <p class="quote">
+      Trying to see if anyone else actually wants this or if it's just me being nostalgic...
     </p>
-  </div>
+    <p class="quote-author">— The Developer</p>
+  </section>
+
+  <!-- Privacy Section -->
+  <section class="privacy">
+    <h2>Privacy Policy</h2>
+    <div class="privacy-content">
+      <div class="privacy-item">
+        <h3>No Data Collection</h3>
+        <p>
+          Imagine does not collect, store, or share any personal data. Your gameplay is yours alone.
+        </p>
+      </div>
+      
+      <div class="privacy-item">
+        <h3>AI Processing</h3>
+        <p>
+          Your gameplay text is sent to an AI gateway solely for puzzle validation and game logic. 
+          No personal information is included, and gameplay data is not stored on our servers.
+        </p>
+      </div>
+      
+      <div class="privacy-item">
+        <h3>Transparent & Fair</h3>
+        <p>
+          No ads. No tracking. No in-app purchases. No dark patterns. 
+          Just a premium game that respects your time and intelligence.
+        </p>
+      </div>
+      
+      <div class="privacy-item">
+        <h3>Last Updated</h3>
+        <p>January 28, 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Imagine. All rights reserved.</p>
+    <p style="margin-top: 1rem; color: var(--text-secondary);">
+      Questions? Contact: <a href="mailto:pratamesh1867@gmail.com">pratamesh1867@gmail.com</a>
+    </p>
+    <div class="social-links">
+      <a href="#">Twitter</a>
+      <a href="#">Product Hunt</a>
+      <a href="https://github.com/yourusername/Imagination" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for any future internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href') !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+    
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all sections and cards
+    document.querySelectorAll('section, .feature-card, .screenshot-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+    
+    // Hero always visible
+    document.querySelector('.hero').style.opacity = '1';
+    document.querySelector('.hero').style.transform = 'translateY(0)';
+  </script>
 </body>
 </html>
