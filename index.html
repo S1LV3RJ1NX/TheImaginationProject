@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Imagination – A Text-Based Puzzle Adventure</title>
+    <title>Project Imagination – A Text-Based Exploration Adventure</title>
     <meta
       name="description"
-      content="Escape locked rooms using only your words and your wits. No graphics, just pure imagination. Available on iOS."
+      content="Explore mysterious chambers using only your words and your wits. No graphics, no noise — just text-based challenges that reward curiosity, logic, and judgment. Available on iOS."
     />
 
     <style>
@@ -123,12 +123,6 @@
         transform: translateY(-2px);
       }
 
-      .coming-soon {
-        margin-top: 1rem;
-        color: var(--accent-cyan);
-        font-size: 0.9rem;
-      }
-
       /* Section Styles */
       section {
         max-width: 1200px;
@@ -169,6 +163,11 @@
 
       .highlight {
         color: var(--terminal-green);
+        font-weight: bold;
+      }
+
+      .highlight-cyan {
+        color: var(--accent-cyan);
         font-weight: bold;
       }
 
@@ -221,37 +220,61 @@
         background: #111111;
       }
 
-      .screenshot-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
+      .screenshot-scroll {
+        display: flex;
+        gap: 1.5rem;
         margin-top: 3rem;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .screenshot-scroll::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .screenshot-scroll::-webkit-scrollbar-track {
+        background: #1a1a1a;
+        border-radius: 3px;
+      }
+
+      .screenshot-scroll::-webkit-scrollbar-thumb {
+        background: var(--terminal-green);
+        border-radius: 3px;
       }
 
       .screenshot-item {
+        flex: 0 0 auto;
+        width: 260px;
         position: relative;
         overflow: hidden;
         border-radius: 12px;
         border: 2px solid rgba(0, 255, 65, 0.3);
         transition: all 0.3s ease;
         background: #0a0a0a;
+        scroll-snap-align: center;
       }
 
       .screenshot-item:hover {
         border-color: var(--terminal-green);
         box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
-        transform: scale(1.05);
+        transform: scale(1.03);
       }
 
       .screenshot-item img {
         width: 100%;
         height: auto;
         display: block;
-        transition: transform 0.3s ease;
       }
 
-      .screenshot-item:hover img {
-        transform: scale(1.1);
+      .screenshot-label {
+        text-align: center;
+        padding: 0.75rem;
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
       }
 
       /* Testimonial */
@@ -271,11 +294,11 @@
       }
 
       .quote::before {
-        content: '"';
+        content: "\201C";
       }
 
       .quote::after {
-        content: '"';
+        content: "\201D";
       }
 
       .quote-author {
@@ -330,15 +353,6 @@
         text-decoration: underline;
       }
 
-      .social-links {
-        margin-top: 1rem;
-      }
-
-      .social-links a {
-        margin: 0 1rem;
-        font-size: 0.9rem;
-      }
-
       /* Responsive */
       @media (max-width: 768px) {
         .logo {
@@ -361,8 +375,8 @@
           grid-template-columns: 1fr;
         }
 
-        .screenshot-grid {
-          grid-template-columns: 1fr;
+        .screenshot-item {
+          width: 220px;
         }
       }
 
@@ -398,49 +412,38 @@
     <section class="hero">
       <div class="logo">PROJECT IMAGINATION<span class="cursor"></span></div>
       <p class="tagline">
-        Games are exhausting now. This one is different.<br />
-        Zero graphics. Just text. Just your mind.
+        No graphics. No noise.<br />
+        Explore mysterious chambers using only your words and your mind.
       </p>
-      <a
-        href="#"
-        class="cta-button"
-        onclick="
-          alert('Coming Soon to the App Store! Follow for updates.');
-          return false;
-        "
-        >Download on iOS</a
-      >
-      <p class="coming-soon">Coming Soon to the App Store</p>
+      <a href="#" class="cta-button" target="_blank">Download on iOS</a>
     </section>
 
     <!-- About Section -->
     <section class="about">
-      <h2>What is Project Imagination?</h2>
+      <h2>What is This?</h2>
       <div class="about-content">
         <p>
-          <span class="highlight">Okay, real talk —</span> Games are exhausting
-          now. Flashing lights, constant pings, "spend $5 to continue" every 2
-          minutes. I got tired of it and made something different.
+          You enter a chamber. You don't know what's inside. You look around,
+          examine objects, talk to strangers, read inscriptions. Clues aren't
+          handed to you &mdash; they're
+          <span class="highlight">discovered</span>.
         </p>
         <p>
-          It's called <span class="highlight">"Project Imagination"</span> — zero graphics,
-          just text. You type what you'd do and face challenges that test
-          different parts of how you think:
+          The game asks one question:
+          <span class="highlight-cyan">What do you do?</span>
         </p>
         <p>
-          • Your <span class="highlight">deduction skills</span><br />
-          • Your <span class="highlight">moral reasoning</span><br />
-          • Your <span class="highlight">logical thinking</span><br />
-          • Your <span class="highlight">wisdom</span>
+          You type your actions in plain English. The world responds. Some
+          chambers test your <span class="highlight">deduction</span>. Others
+          test <span class="highlight">moral judgment</span>,
+          <span class="highlight">persuasion</span>, or
+          <span class="highlight">patience</span>. Often, the answer was right
+          in front of you &mdash; you just had to look closer.
         </p>
         <p>
-          No menus. No hints. No hand-holding. Just you, a locked room, and your
-          imagination.
-        </p>
-        <p>
-          Think <span class="highlight">escape rooms</span> meet
-          <span class="highlight">text adventures</span>, powered by AI that
-          actually understands what you mean.
+          Think <span class="highlight">D&amp;D exploration</span> meets
+          <span class="highlight">escape rooms</span> &mdash; no dice, no
+          character sheets. Just your curiosity and your imagination.
         </p>
       </div>
     </section>
@@ -450,11 +453,22 @@
       <h2>Features</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🧠</div>
-          <div class="feature-title">Pure Imagination</div>
+          <div class="feature-icon">🚪</div>
+          <div class="feature-title">20 Handcrafted Chambers</div>
           <p class="feature-description">
-            No graphics. No distractions. Just text and your mind. Experience
-            puzzles the way they were meant to be.
+            Riddles, whodunit mysteries, moral dilemmas, social persuasion, code
+            locks, and lateral thinking puzzles. Every chamber is a different
+            adventure.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <div class="feature-title">Progressive Discovery</div>
+          <p class="feature-description">
+            Nothing is given upfront. Explore the environment, examine objects,
+            and uncover clues step by step. The puzzle reveals itself as you
+            interact.
           </p>
         </div>
 
@@ -462,44 +476,35 @@
           <div class="feature-icon">💬</div>
           <div class="feature-title">Natural Language</div>
           <p class="feature-description">
-            Type what you'd actually do. AI-powered understanding means no
-            frustrating parser syntax or guessing keywords.
+            Type what you'd actually do. "I examine the walls." "I talk to the
+            gardener." No commands, no menus &mdash; just your words.
           </p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <div class="feature-title">25+ Unique Rooms</div>
+          <div class="feature-icon">📖</div>
+          <div class="feature-title">Living Journal</div>
           <p class="feature-description">
-            Each room tests a different skill: logic, ethics, deduction, wisdom.
-            Progress through increasingly complex challenges.
+            Your journal writes itself as you play. Every chamber adds a new
+            chapter to your story, shaped by the choices you made.
           </p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">🔐</div>
-          <div class="feature-title">No Hand-Holding</div>
+          <div class="feature-icon">🧠</div>
+          <div class="feature-title">Personality Insights</div>
           <p class="feature-description">
-            No tutorials. No hints (unless you ask). Puzzles designed to make
-            you feel like a genius when you solve them.
+            Your choices reveal your thinking style. Are you logical or
+            empathetic? Patient or impulsive? The game tracks it all.
           </p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <div class="feature-title">Quick Sessions</div>
+          <div class="feature-icon">✨</div>
+          <div class="feature-title">Zero Noise</div>
           <p class="feature-description">
-            Play for 5 minutes or 50. Each room is self-contained. Perfect for
-            commutes, coffee breaks, or deep focus.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🎨</div>
-          <div class="feature-title">Terminal Aesthetic</div>
-          <p class="feature-description">
-            Classic hacker terminal vibes. Green-on-black. Monospace fonts. For
-            those who appreciate minimalist design.
+            No ads. No timers. No in-app purchases. No hand-holding. Short
+            focused sessions. Designed to make you feel clever, not rushed.
           </p>
         </div>
       </div>
@@ -508,23 +513,31 @@
     <!-- Screenshots Section -->
     <section class="screenshots">
       <h2>Screenshots</h2>
-      <div class="screenshot-grid">
+      <div class="screenshot-scroll">
+        <div class="screenshot-item">
+          <img src="images/01.png" alt="Welcome Screen" loading="lazy" />
+          <div class="screenshot-label">The Chambers Await</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="images/05.png" alt="Chamber Selection" loading="lazy" />
+          <div class="screenshot-label">Choose Your Path</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="images/07.png" alt="Entering a Chamber" loading="lazy" />
+          <div class="screenshot-label">Enter the Unknown</div>
+        </div>
         <div class="screenshot-item">
           <img
-            src="images/s01.png"
-            alt="Room Selection Screen"
+            src="images/09.png"
+            alt="Exploring and Discovering"
             loading="lazy"
           />
+          <div class="screenshot-label">Explore &amp; Discover</div>
         </div>
         <div class="screenshot-item">
-          <img src="images/s03.png" alt="Room 01" loading="lazy" />
+          <img src="images/08.png" alt="Journal Entry" loading="lazy" />
+          <div class="screenshot-label">Your Story Unfolds</div>
         </div>
-        <div class="screenshot-item">
-          <img src="images/s04.png" alt="Room 01 Solution" loading="lazy" />
-        </div>
-        <!-- <div class="screenshot-item">
-          <img src="images/s08.png" alt="Final Screen" loading="lazy" />
-        </div> -->
       </div>
     </section>
 
@@ -545,31 +558,31 @@
         <div class="privacy-item">
           <h3>No Data Collection</h3>
           <p>
-            Project Imagination does not collect, store, or share any personal data. Your
-            gameplay is yours alone.
+            Project Imagination does not collect, store, or share any personal
+            data. Your gameplay is yours alone.
           </p>
         </div>
 
         <div class="privacy-item">
           <h3>AI Processing</h3>
           <p>
-            Your gameplay text is sent to an AI gateway solely for puzzle
-            validation and game logic. No personal information is included, and
+            Your gameplay text is sent to an AI service solely for puzzle
+            validation and narration. No personal information is included, and
             gameplay data is not stored on our servers.
           </p>
         </div>
 
         <div class="privacy-item">
-          <h3>Transparent & Fair</h3>
+          <h3>Transparent &amp; Fair</h3>
           <p>
             No ads. No tracking. No in-app purchases. No dark patterns. Just a
-            premium game that respects your time and intelligence.
+            game that respects your time and intelligence.
           </p>
         </div>
 
         <div class="privacy-item">
           <h3>Last Updated</h3>
-          <p>January 28, 2026</p>
+          <p>February 4, 2026</p>
         </div>
       </div>
     </section>
@@ -578,18 +591,13 @@
     <footer>
       <p>&copy; 2026 Project Imagination. All rights reserved.</p>
       <p style="margin-top: 1rem; color: var(--text-secondary)">
-        Questions? Contact:
+        Questions or feedback?
         <a href="mailto:pratamesh1867@gmail.com">pratamesh1867@gmail.com</a>
       </p>
-      <!-- <div class="social-links">
-      <a href="#">Twitter</a>
-      <a href="#">Product Hunt</a>
-      <a href="https://github.com/yourusername/Imagination" target="_blank">GitHub</a>
-    </div> -->
     </footer>
 
     <script>
-      // Smooth scroll for any future internal links
+      // Smooth scroll for internal links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           if (this.getAttribute("href") !== "#") {
@@ -602,7 +610,7 @@
         });
       });
 
-      // Add fade-in animation on scroll
+      // Fade-in animation on scroll
       const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
@@ -617,7 +625,6 @@
         });
       }, observerOptions);
 
-      // Observe all sections and cards
       document
         .querySelectorAll("section, .feature-card, .screenshot-item")
         .forEach((el) => {
