@@ -334,6 +334,103 @@
         font-size: 0.95rem;
       }
 
+      /* Feedback Section */
+      .feedback {
+        background: var(--terminal-bg);
+      }
+
+      .feedback-content {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .feedback-intro {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+
+      .feedback-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form-group label {
+        color: var(--terminal-green);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .form-group select,
+      .form-group textarea {
+        background: #1a1a1a;
+        border: 1px solid rgba(0, 255, 65, 0.3);
+        color: var(--text-primary);
+        font-family: inherit;
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-group select:focus,
+      .form-group textarea:focus {
+        border-color: var(--terminal-green);
+        box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+      }
+
+      .form-group select option {
+        background: #1a1a1a;
+        color: var(--text-primary);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .feedback-submit {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.9rem 2rem;
+        background: var(--terminal-green);
+        color: var(--terminal-bg);
+        border: 2px solid var(--terminal-green);
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: all 0.3s ease;
+      }
+
+      .feedback-submit:hover {
+        background: transparent;
+        color: var(--terminal-green);
+        box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+      }
+
+      .feedback-note {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.75rem;
+        margin-top: -0.5rem;
+      }
+
       /* Footer */
       footer {
         background: var(--terminal-bg);
@@ -607,6 +704,68 @@
       </div>
     </section>
 
+    <!-- Feedback Section -->
+    <section class="feedback" id="feedback">
+      <h2>Feedback</h2>
+      <div class="feedback-content">
+        <p class="feedback-intro">
+          Found a bug? Have an idea? Stuck on a chamber?
+          <span class="highlight">We'd love to hear from you.</span>
+        </p>
+
+        <form class="feedback-form" id="feedbackForm">
+          <div class="form-group">
+            <label for="feedbackType">Category</label>
+            <select id="feedbackType" onchange="toggleChamberSelect()">
+              <option value="general">General Game Feedback</option>
+              <option value="chamber">Feedback on a Specific Chamber</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="chamberGroup" style="display: none">
+            <label for="chamberSelect">Chamber</label>
+            <select id="chamberSelect">
+              <option value="">Select a chamber...</option>
+              <option value="The Mirror's Question">The Mirror's Question</option>
+              <option value="The Statue Garden">The Statue Garden</option>
+              <option value="The King's Court">The King's Court</option>
+              <option value="The Shadow Market">The Shadow Market</option>
+              <option value="The Echo Chamber">The Echo Chamber</option>
+              <option value="The Diplomat's Table">The Diplomat's Table</option>
+              <option value="The Cartographer's Dilemma">The Cartographer's Dilemma</option>
+              <option value="The Alchemist's Riddle">The Alchemist's Riddle</option>
+              <option value="The Boy Who Cannot Cry">The Boy Who Cannot Cry</option>
+              <option value="The Merchant's Paradox">The Merchant's Paradox</option>
+              <option value="The Whispering Gallery">The Whispering Gallery</option>
+              <option value="The Memory Palace">The Memory Palace</option>
+              <option value="The Bridge of Words">The Bridge of Words</option>
+              <option value="The Timekeeper's Test">The Timekeeper's Test</option>
+              <option value="The Illusionist's Stage">The Illusionist's Stage</option>
+              <option value="The Inheritance">The Inheritance</option>
+              <option value="The Gardener's Secret">The Gardener's Secret</option>
+              <option value="The Forger's Dilemma">The Forger's Dilemma</option>
+              <option value="The Stolen Crown">The Stolen Crown</option>
+              <option value="The Last Door">The Last Door</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="feedbackMessage">Your Feedback</label>
+            <textarea
+              id="feedbackMessage"
+              rows="5"
+              placeholder="Tell us what you think..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="feedback-submit">
+            <span>&#9993;</span> Send Feedback
+          </button>
+          <p class="feedback-note">Opens your email client with feedback pre-filled</p>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <p>&copy; 2026 Project Imagination. All rights reserved.</p>
@@ -657,6 +816,49 @@
       // Hero always visible
       document.querySelector(".hero").style.opacity = "1";
       document.querySelector(".hero").style.transform = "translateY(0)";
+
+      // Feedback form
+      function toggleChamberSelect() {
+        const type = document.getElementById("feedbackType").value;
+        const group = document.getElementById("chamberGroup");
+        group.style.display = type === "chamber" ? "flex" : "none";
+      }
+
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const type = document.getElementById("feedbackType").value;
+          const chamber = document.getElementById("chamberSelect").value;
+          const message = document.getElementById("feedbackMessage").value.trim();
+
+          if (!message) {
+            alert("Please enter your feedback before sending.");
+            return;
+          }
+
+          if (type === "chamber" && !chamber) {
+            alert("Please select a chamber.");
+            return;
+          }
+
+          let subject;
+          if (type === "chamber" && chamber) {
+            subject = "[Imagination] Chamber Feedback: " + chamber;
+          } else {
+            subject = "[Imagination] General Game Feedback";
+          }
+
+          const mailto =
+            "mailto:pratamesh1867@gmail.com" +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(message);
+
+          window.location.href = mailto;
+        });
     </script>
   </body>
 </html>
