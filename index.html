@@ -592,6 +592,45 @@
         display: none;
       }
 
+      /* Waitlist Counter Pill */
+      .waitlist-counter {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+        margin-top: 1rem;
+        padding: 0.5rem 1.2rem;
+        border: 1px solid rgba(0, 255, 65, 0.3);
+        border-radius: 50px;
+        background: rgba(0, 255, 65, 0.05);
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+      }
+
+      .waitlist-counter-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--terminal-green);
+        border-radius: 50%;
+        flex-shrink: 0;
+        animation: pulse-dot 2s ease-in-out infinite;
+        box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+      }
+
+      @keyframes pulse-dot {
+        0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(0, 255, 65, 0.6); }
+        50% { opacity: 0.4; box-shadow: 0 0 14px rgba(0, 255, 65, 1); }
+      }
+
+      .waitlist-count-num {
+        color: var(--terminal-green);
+        font-weight: bold;
+        font-size: 0.95rem;
+        text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+      }
+
       /* Waitlist Success State */
       .waitlist-success {
         display: none;
@@ -664,6 +703,15 @@
         .waitlist-input-group button {
           width: 100%;
         }
+
+        .waitlist-counter {
+          font-size: 0.75rem;
+          padding: 0.4rem 1rem;
+        }
+
+        .waitlist-count-num {
+          font-size: 0.85rem;
+        }
       }
     </style>
   </head>
@@ -688,6 +736,7 @@
           <button type="submit" id="waitlistBtn">JOIN WAITLIST</button>
         </div>
         <p class="waitlist-subtext">Be among the first to enter the chambers.</p>
+        <p class="waitlist-counter"><span class="waitlist-counter-dot"></span> <span class="waitlist-count-num" id="waitlistCount">...</span> explorers already on the waitlist</p>
       </form>
       <div class="waitlist-success" id="waitlistSuccess">
         <p class="waitlist-success-text">> ACCESS GRANTED</p>
@@ -963,6 +1012,7 @@
           />
           <button type="submit" id="waitlistBtnBottom">JOIN WAITLIST</button>
         </div>
+        <p class="waitlist-counter"><span class="waitlist-counter-dot"></span> <span class="waitlist-count-num" id="waitlistCountBottom">...</span> explorers already on the waitlist</p>
       </form>
       <div class="waitlist-success" id="waitlistSuccessBottom">
         <p class="waitlist-success-text">> ACCESS GRANTED</p>
@@ -983,6 +1033,34 @@
       // Waitlist form submission (shared handler for hero + bottom forms)
       const APPS_SCRIPT_URL =
         "https://script.google.com/macros/s/AKfycbyouhRLNiTwDCC0vLjO06WN170Do8xxEbV9nMXI42Dzm4fWynbAGIseoL6OqC91R3504Q/exec";
+
+      // Waitlist counter — deterministic count that grows ~2-3 per 3-hour window
+      (function initWaitlistCounter() {
+        const LAUNCH_DATE = new Date("2026-02-16T10:00:00Z");
+        const BASE_COUNT = 47;
+        const WINDOW_MS = 3 * 60 * 60 * 1000;
+
+        function seededRandom(seed) {
+          var x = Math.sin(seed) * 10000;
+          return x - Math.floor(x);
+        }
+
+        var now = Date.now();
+        var elapsed = Math.max(0, now - LAUNCH_DATE.getTime());
+        var windows = Math.floor(elapsed / WINDOW_MS);
+        var total = BASE_COUNT;
+
+        for (var i = 0; i < windows; i++) {
+          total += 2 + Math.floor(seededRandom(i + 1) * 2);
+        }
+
+        var partial = (elapsed % WINDOW_MS) / WINDOW_MS;
+        var nextAdd = 2 + Math.floor(seededRandom(windows + 1) * 2);
+        total += Math.floor(partial * nextAdd);
+
+        document.getElementById("waitlistCount").textContent = total;
+        document.getElementById("waitlistCountBottom").textContent = total;
+      })();
 
       async function handleWaitlistSubmit(formId, emailId, btnId, successId, extras) {
         const emailInput = document.getElementById(emailId);
