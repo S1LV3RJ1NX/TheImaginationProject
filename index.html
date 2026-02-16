@@ -532,7 +532,9 @@
         border: 2px solid rgba(0, 255, 65, 0.4);
         border-radius: 6px;
         overflow: hidden;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        transition:
+          border-color 0.3s ease,
+          box-shadow 0.3s ease;
       }
 
       .waitlist-input-group:focus-within {
@@ -620,8 +622,15 @@
       }
 
       @keyframes pulse-dot {
-        0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(0, 255, 65, 0.6); }
-        50% { opacity: 0.4; box-shadow: 0 0 14px rgba(0, 255, 65, 1); }
+        0%,
+        100% {
+          opacity: 1;
+          box-shadow: 0 0 6px rgba(0, 255, 65, 0.6);
+        }
+        50% {
+          opacity: 0.4;
+          box-shadow: 0 0 14px rgba(0, 255, 65, 1);
+        }
       }
 
       .waitlist-count-num {
@@ -629,6 +638,23 @@
         font-weight: bold;
         font-size: 0.95rem;
         text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+      }
+
+      .waitlist-ph-link {
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+        z-index: 1;
+        position: relative;
+      }
+
+      .waitlist-ph-link a {
+        color: var(--terminal-green);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .waitlist-ph-link a:hover {
+        color: var(--accent-cyan);
       }
 
       /* Waitlist Success State */
@@ -735,12 +761,28 @@
           />
           <button type="submit" id="waitlistBtn">JOIN WAITLIST</button>
         </div>
-        <p class="waitlist-subtext">Be among the first to enter the chambers.</p>
-        <p class="waitlist-counter"><span class="waitlist-counter-dot"></span> <span class="waitlist-count-num" id="waitlistCount">...</span> explorers already on the waitlist</p>
+        <p class="waitlist-subtext">
+          Be among the first to enter the chambers.
+        </p>
+        <p class="waitlist-counter">
+          <span class="waitlist-counter-dot"></span>
+          <span class="waitlist-count-num" id="waitlistCount">...</span>
+          explorers already on the waitlist
+        </p>
+        <p class="waitlist-ph-link">
+          <a
+            href="https://www.producthunt.com/products/project-imagination"
+            target="_blank"
+            rel="noopener"
+            >> Support us on Product Hunt</a
+          >
+        </p>
       </form>
       <div class="waitlist-success" id="waitlistSuccess">
         <p class="waitlist-success-text">> ACCESS GRANTED</p>
-        <p class="waitlist-success-sub">You're on the list. The chambers await.</p>
+        <p class="waitlist-success-sub">
+          You're on the list. The chambers await.
+        </p>
       </div>
     </section>
 
@@ -951,23 +993,41 @@
             <label for="chamberSelect">Chamber</label>
             <select id="chamberSelect">
               <option value="">Select a chamber...</option>
-              <option value="The Mirror's Question">The Mirror's Question</option>
+              <option value="The Mirror's Question">
+                The Mirror's Question
+              </option>
               <option value="The Statue Garden">The Statue Garden</option>
               <option value="The King's Court">The King's Court</option>
               <option value="The Shadow Market">The Shadow Market</option>
               <option value="The Echo Chamber">The Echo Chamber</option>
               <option value="The Diplomat's Table">The Diplomat's Table</option>
-              <option value="The Cartographer's Dilemma">The Cartographer's Dilemma</option>
-              <option value="The Alchemist's Riddle">The Alchemist's Riddle</option>
-              <option value="The Boy Who Cannot Cry">The Boy Who Cannot Cry</option>
-              <option value="The Merchant's Paradox">The Merchant's Paradox</option>
-              <option value="The Whispering Gallery">The Whispering Gallery</option>
+              <option value="The Cartographer's Dilemma">
+                The Cartographer's Dilemma
+              </option>
+              <option value="The Alchemist's Riddle">
+                The Alchemist's Riddle
+              </option>
+              <option value="The Boy Who Cannot Cry">
+                The Boy Who Cannot Cry
+              </option>
+              <option value="The Merchant's Paradox">
+                The Merchant's Paradox
+              </option>
+              <option value="The Whispering Gallery">
+                The Whispering Gallery
+              </option>
               <option value="The Memory Palace">The Memory Palace</option>
               <option value="The Bridge of Words">The Bridge of Words</option>
-              <option value="The Timekeeper's Test">The Timekeeper's Test</option>
-              <option value="The Illusionist's Stage">The Illusionist's Stage</option>
+              <option value="The Timekeeper's Test">
+                The Timekeeper's Test
+              </option>
+              <option value="The Illusionist's Stage">
+                The Illusionist's Stage
+              </option>
               <option value="The Inheritance">The Inheritance</option>
-              <option value="The Gardener's Secret">The Gardener's Secret</option>
+              <option value="The Gardener's Secret">
+                The Gardener's Secret
+              </option>
               <option value="The Forger's Dilemma">The Forger's Dilemma</option>
               <option value="The Stolen Crown">The Stolen Crown</option>
               <option value="The Last Door">The Last Door</option>
@@ -986,7 +1046,9 @@
           <button type="submit" class="feedback-submit">
             <span>&#9993;</span> Send Feedback
           </button>
-          <p class="feedback-note">Opens your email client with feedback pre-filled</p>
+          <p class="feedback-note">
+            Opens your email client with feedback pre-filled
+          </p>
         </form>
       </div>
     </section>
@@ -1008,11 +1070,25 @@
           />
           <button type="submit" id="waitlistBtnBottom">JOIN WAITLIST</button>
         </div>
-        <p class="waitlist-counter"><span class="waitlist-counter-dot"></span> <span class="waitlist-count-num" id="waitlistCountBottom">...</span> explorers already on the waitlist</p>
+        <p class="waitlist-counter">
+          <span class="waitlist-counter-dot"></span>
+          <span class="waitlist-count-num" id="waitlistCountBottom">...</span>
+          explorers already on the waitlist
+        </p>
+        <p class="waitlist-ph-link">
+          <a
+            href="https://www.producthunt.com/products/project-imagination"
+            target="_blank"
+            rel="noopener"
+            >> Support us on Product Hunt</a
+          >
+        </p>
       </form>
       <div class="waitlist-success" id="waitlistSuccessBottom">
         <p class="waitlist-success-text">> ACCESS GRANTED</p>
-        <p class="waitlist-success-sub">You're on the list. The chambers await.</p>
+        <p class="waitlist-success-sub">
+          You're on the list. The chambers await.
+        </p>
       </div>
     </section>
 
@@ -1022,9 +1098,6 @@
       <p style="margin-top: 1rem; color: var(--text-secondary)">
         Questions or feedback?
         <a href="mailto:pratamesh1867@gmail.com">pratamesh1867@gmail.com</a>
-      </p>
-      <p style="margin-top: 0.75rem">
-        <a href="https://www.producthunt.com/products/project-imagination" target="_blank" rel="noopener">> Support us on Product Hunt</a>
       </p>
     </footer>
 
@@ -1073,7 +1146,9 @@
         updateCounterDisplay(fakeBase);
 
         fetch(APPS_SCRIPT_URL)
-          .then(function (res) { return res.json(); })
+          .then(function (res) {
+            return res.json();
+          })
           .then(function (data) {
             if (data && typeof data.count === "number") {
               updateCounterDisplay(fakeBase + data.count);
@@ -1082,7 +1157,13 @@
           .catch(function () {});
       })();
 
-      async function handleWaitlistSubmit(formId, emailId, btnId, successId, extras) {
+      async function handleWaitlistSubmit(
+        formId,
+        emailId,
+        btnId,
+        successId,
+        extras,
+      ) {
         const emailInput = document.getElementById(emailId);
         const btn = document.getElementById(btnId);
         const form = document.getElementById(formId);
@@ -1121,8 +1202,11 @@
         .addEventListener("submit", function (e) {
           e.preventDefault();
           handleWaitlistSubmit(
-            "waitlistForm", "waitlistEmail", "waitlistBtn",
-            "waitlistSuccess", { hideSelector: ".coming-soon" }
+            "waitlistForm",
+            "waitlistEmail",
+            "waitlistBtn",
+            "waitlistSuccess",
+            { hideSelector: ".coming-soon" },
           );
         });
 
@@ -1131,8 +1215,11 @@
         .addEventListener("submit", function (e) {
           e.preventDefault();
           handleWaitlistSubmit(
-            "waitlistFormBottom", "waitlistEmailBottom", "waitlistBtnBottom",
-            "waitlistSuccessBottom", null
+            "waitlistFormBottom",
+            "waitlistEmailBottom",
+            "waitlistBtnBottom",
+            "waitlistSuccessBottom",
+            null,
           );
         });
 
@@ -1191,7 +1278,9 @@
 
           const type = document.getElementById("feedbackType").value;
           const chamber = document.getElementById("chamberSelect").value;
-          const message = document.getElementById("feedbackMessage").value.trim();
+          const message = document
+            .getElementById("feedbackMessage")
+            .value.trim();
 
           if (!message) {
             alert("Please enter your feedback before sending.");
