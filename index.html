@@ -1032,10 +1032,12 @@
     <script>
       // Waitlist form submission (shared handler for hero + bottom forms)
       const APPS_SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbyouhRLNiTwDCC0vLjO06WN170Do8xxEbV9nMXI42Dzm4fWynbAGIseoL6OqC91R3504Q/exec";
+        "https://script.google.com/macros/s/AKfycbzwN36c3QMKkNwUtxNVq-Ee9RLShdPfBDkGhRZgCcCMFzxXmMAM7muWPxsouZBtaKR39Q/exec";
 
-      // Waitlist counter — deterministic count that grows ~2-3 per 3-hour window
-      (function initWaitlistCounter() {
+      // Waitlist counter — fake base + real count from Google Sheet
+      var currentDisplayCount = 0;
+
+      function getFakeBase() {
         const LAUNCH_DATE = new Date("2026-02-16T10:00:00Z");
         const BASE_COUNT = 47;
         const WINDOW_MS = 3 * 60 * 60 * 1000;
@@ -1058,8 +1060,27 @@
         var nextAdd = 2 + Math.floor(seededRandom(windows + 1) * 2);
         total += Math.floor(partial * nextAdd);
 
-        document.getElementById("waitlistCount").textContent = total;
-        document.getElementById("waitlistCountBottom").textContent = total;
+        return total;
+      }
+
+      function updateCounterDisplay(count) {
+        currentDisplayCount = count;
+        document.getElementById("waitlistCount").textContent = count;
+        document.getElementById("waitlistCountBottom").textContent = count;
+      }
+
+      (function initWaitlistCounter() {
+        var fakeBase = getFakeBase();
+        updateCounterDisplay(fakeBase);
+
+        fetch(APPS_SCRIPT_URL)
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            if (data && typeof data.count === "number") {
+              updateCounterDisplay(fakeBase + data.count);
+            }
+          })
+          .catch(function () {});
       })();
 
       async function handleWaitlistSubmit(formId, emailId, btnId, successId, extras) {
@@ -1082,6 +1103,7 @@
             body: JSON.stringify({ email: email }),
           });
 
+          updateCounterDisplay(currentDisplayCount + 1);
           form.style.display = "none";
           if (extras && extras.hideSelector) {
             const el = document.querySelector(extras.hideSelector);
