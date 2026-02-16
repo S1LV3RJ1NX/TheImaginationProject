@@ -1,0 +1,19 @@
+SUBJECT: The chambers are open. Project Imagination is live.
+
+BODY:
+
+You signed up for the waitlist. Thank you for believing in a game with no graphics.
+
+Project Imagination is now available on the App Store:
+[APP STORE LINK]
+
+20 handcrafted chambers. Riddles, mysteries, moral dilemmas.
+No ads. No in-app purchases. Just your words and your mind.
+
+I'd love to hear what you think — reply to this email anytime.
+
+— Prathamesh
+
+---
+NOTE: Replace [APP STORE LINK] with your actual App Store URL.
+Send via "Yet Another Mail Merge" from your Google Sheet.

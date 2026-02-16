@@ -1,0 +1,14 @@
+[X] people have joined the waitlist for Project Imagination in [Y] days.
+
+For a game with no graphics, no marketing budget, and no VC funding — that feels like validation.
+
+Thank you to everyone who signed up and shared it.
+
+If you missed it: Project Imagination is a text-based iOS puzzle game where you explore chambers using only your words. Think escape rooms meets D&D.
+
+Still accepting signups: https://bit.ly/the-imagination-project
+
+#indiedev #buildinpublic #startuplife
+
+---
+NOTE: Replace [X] with your actual waitlist count and [Y] with number of days since Feb 17.

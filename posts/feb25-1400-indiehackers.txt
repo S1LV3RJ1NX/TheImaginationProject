@@ -1,0 +1,14 @@
+PLATFORM: Indie Hackers (indiehackers.com) — Post in "Show" section
+
+TITLE: Building a text-based iOS puzzle game with zero graphics
+
+BODY:
+
+I'm a solo dev building Project Imagination — a text-based exploration game where you type your actions and the world responds with AI narration.
+
+- 20 handcrafted chambers (riddles, mysteries, moral dilemmas)
+- No ads, no IAP
+- SwiftUI + FastAPI + LLM narration
+- Pre-launch waitlist: https://bit.ly/the-imagination-project
+
+Currently running a waitlist to gauge interest before the App Store launch. Would love feedback from this community.

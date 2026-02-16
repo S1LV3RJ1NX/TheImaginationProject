@@ -1,0 +1,18 @@
+SUBREDDIT: r/iOSProgramming
+
+TITLE: I built an AI-powered text adventure game for iOS — here's the architecture
+
+BODY:
+
+Just finished building Project Imagination — a text-based puzzle game where the narration is handled by an LLM, but the game logic and state is entirely client-side.
+
+Architecture:
+- Swift/SwiftUI on the client, owns all game state
+- FastAPI backend acts as a stateless LLM proxy
+- HMAC-signed requests for API security
+- Each "chamber" has hand-designed logic with specific solutions
+- The AI handles narration/response, not puzzle generation
+
+The interesting challenge was making AI narration feel consistent without giving the AI control over puzzle state. Happy to go deeper on any of these if anyone's curious.
+
+Waitlist if you want to try it: https://bit.ly/the-imagination-project
