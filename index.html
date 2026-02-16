@@ -6,7 +6,7 @@
     <title>Project Imagination – A Text-Based Exploration Adventure</title>
     <meta
       name="description"
-      content="Explore mysterious chambers using only your words and your wits. No graphics, no noise — just text-based challenges that reward curiosity, logic, and judgment. Available on iOS."
+      content="Explore mysterious chambers using only your words and your wits. No graphics, no noise — just text-based challenges that reward curiosity, logic, and judgment. Coming soon to iOS — join the waitlist."
     />
 
     <style>
@@ -502,6 +502,169 @@
           opacity: 0;
         }
       }
+
+      /* Coming Soon Badge */
+      .coming-soon {
+        color: var(--accent-cyan);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        padding: 0.4rem 1.2rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+
+      /* Waitlist Form */
+      .waitlist-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        z-index: 1;
+        position: relative;
+      }
+
+      .waitlist-input-group {
+        display: flex;
+        gap: 0;
+        border: 2px solid rgba(0, 255, 65, 0.4);
+        border-radius: 6px;
+        overflow: hidden;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .waitlist-input-group:focus-within {
+        border-color: var(--terminal-green);
+        box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+      }
+
+      .waitlist-input-group input {
+        background: rgba(10, 10, 10, 0.8);
+        border: none;
+        color: var(--text-primary);
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 0.9rem 1.2rem;
+        width: 300px;
+        outline: none;
+      }
+
+      .waitlist-input-group input::placeholder {
+        color: var(--text-secondary);
+      }
+
+      .waitlist-input-group button {
+        background: var(--terminal-green);
+        color: var(--terminal-bg);
+        border: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0.9rem 1.5rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+      }
+
+      .waitlist-input-group button:hover {
+        background: #33ff66;
+      }
+
+      .waitlist-input-group button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .waitlist-subtext {
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+      }
+
+      .waitlist-error {
+        color: #ff4444;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+        display: none;
+      }
+
+      /* Waitlist Success State */
+      .waitlist-success {
+        display: none;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        animation: fadeInUp 0.6s ease;
+      }
+
+      .waitlist-success-text {
+        color: var(--terminal-green);
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.15em;
+      }
+
+      .waitlist-success-sub {
+        color: var(--text-secondary);
+        font-size: 1rem;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Bottom Waitlist CTA */
+      .bottom-waitlist {
+        background: #111111;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+
+      .bottom-waitlist h2 {
+        margin-bottom: 0.75rem;
+      }
+
+      .bottom-waitlist .waitlist-form {
+        margin-top: 1.5rem;
+      }
+
+      .bottom-waitlist-sub {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      /* Responsive - waitlist */
+      @media (max-width: 768px) {
+        .waitlist-input-group {
+          flex-direction: column;
+          width: 100%;
+          max-width: 320px;
+        }
+
+        .waitlist-input-group input {
+          width: 100%;
+          text-align: center;
+        }
+
+        .waitlist-input-group button {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -512,7 +675,24 @@
         No graphics. No noise.<br />
         Explore mysterious chambers using only your words and your mind.
       </p>
-      <a href="#" class="cta-button" target="_blank">Download on iOS</a>
+      <p class="coming-soon">COMING SOON TO iOS</p>
+      <form class="waitlist-form" id="waitlistForm">
+        <div class="waitlist-input-group">
+          <input
+            type="email"
+            id="waitlistEmail"
+            placeholder="enter your email..."
+            required
+            autocomplete="email"
+          />
+          <button type="submit" id="waitlistBtn">JOIN WAITLIST</button>
+        </div>
+        <p class="waitlist-subtext">Be among the first to enter the chambers.</p>
+      </form>
+      <div class="waitlist-success" id="waitlistSuccess">
+        <p class="waitlist-success-text">> ACCESS GRANTED</p>
+        <p class="waitlist-success-sub">You're on the list. The chambers await.</p>
+      </div>
     </section>
 
     <!-- About Section -->
@@ -766,6 +946,30 @@
       </div>
     </section>
 
+    <!-- Bottom Waitlist CTA -->
+    <section class="bottom-waitlist">
+      <h2>Ready to Enter?</h2>
+      <p class="bottom-waitlist-sub">
+        Join the waitlist. Be the first to know when the chambers open.
+      </p>
+      <form class="waitlist-form" id="waitlistFormBottom">
+        <div class="waitlist-input-group">
+          <input
+            type="email"
+            id="waitlistEmailBottom"
+            placeholder="enter your email..."
+            required
+            autocomplete="email"
+          />
+          <button type="submit" id="waitlistBtnBottom">JOIN WAITLIST</button>
+        </div>
+      </form>
+      <div class="waitlist-success" id="waitlistSuccessBottom">
+        <p class="waitlist-success-text">> ACCESS GRANTED</p>
+        <p class="waitlist-success-sub">You're on the list. The chambers await.</p>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <p>&copy; 2026 Project Imagination. All rights reserved.</p>
@@ -776,6 +980,63 @@
     </footer>
 
     <script>
+      // Waitlist form submission (shared handler for hero + bottom forms)
+      const APPS_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbyouhRLNiTwDCC0vLjO06WN170Do8xxEbV9nMXI42Dzm4fWynbAGIseoL6OqC91R3504Q/exec";
+
+      async function handleWaitlistSubmit(formId, emailId, btnId, successId, extras) {
+        const emailInput = document.getElementById(emailId);
+        const btn = document.getElementById(btnId);
+        const form = document.getElementById(formId);
+        const success = document.getElementById(successId);
+        const email = emailInput.value.trim();
+
+        if (!email) return;
+
+        btn.disabled = true;
+        btn.textContent = "JOINING...";
+
+        try {
+          await fetch(APPS_SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: email }),
+          });
+
+          form.style.display = "none";
+          if (extras && extras.hideSelector) {
+            const el = document.querySelector(extras.hideSelector);
+            if (el) el.style.display = "none";
+          }
+          success.style.display = "block";
+        } catch (err) {
+          btn.disabled = false;
+          btn.textContent = "JOIN WAITLIST";
+          alert("Something went wrong. Please try again or email us directly.");
+        }
+      }
+
+      document
+        .getElementById("waitlistForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          handleWaitlistSubmit(
+            "waitlistForm", "waitlistEmail", "waitlistBtn",
+            "waitlistSuccess", { hideSelector: ".coming-soon" }
+          );
+        });
+
+      document
+        .getElementById("waitlistFormBottom")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          handleWaitlistSubmit(
+            "waitlistFormBottom", "waitlistEmailBottom", "waitlistBtnBottom",
+            "waitlistSuccessBottom", null
+          );
+        });
+
       // Smooth scroll for internal links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
