@@ -1,14 +1,14 @@
-PLATFORM: Hacker News (news.ycombinator.com) — Submit as "Show HN"
+PLATFORM: Hacker News (news.ycombinator.com) - Submit as "Show HN"
 
 TITLE: Show HN: A text-based puzzle game for iOS with AI narration and zero graphics
 
 BODY (put in URL field: https://bit.ly/the-imagination-project, OR put URL in body):
 
-I built Project Imagination — a text-based exploration game where you type actions in plain English and an AI narrates the world's response.
+I built Project Imagination, a text-based exploration game where you type actions in plain English and an AI narrates the world's response.
 
 20 hand-designed chambers: riddles, moral dilemmas, whodunit mysteries, social deduction. Each one is self-contained (~15 min).
 
-Tech: SwiftUI client (owns all state) + FastAPI backend (stateless LLM proxy) + HMAC-signed requests. The AI handles narration, not puzzle logic — so it can't accidentally solve things for the player.
+Tech: SwiftUI client (owns all state) + FastAPI backend (stateless LLM proxy) + HMAC-signed requests. The AI handles narration, not puzzle logic, so it can't accidentally solve things for the player.
 
 Waitlist: https://bit.ly/the-imagination-project
 

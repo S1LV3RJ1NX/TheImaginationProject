@@ -2,7 +2,7 @@ It's live!
 
 Project Imagination is now on the App Store.
 
-A text-based puzzle game with zero graphics — you type what you'd do and the world responds.
+A text-based puzzle game with zero graphics. You type what you'd do and the world responds.
 
 20 chambers. No ads. No in-app purchases.
 

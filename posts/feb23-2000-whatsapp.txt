@@ -1,6 +1,6 @@
 Just submitted Project Imagination to the App Store for review.
 
-A text-based puzzle game with zero graphics — you type what you'd do and the world responds.
+A text-based puzzle game with zero graphics. You type what you'd do and the world responds.
 
 20 handcrafted chambers. No ads. No in-app purchases.
 

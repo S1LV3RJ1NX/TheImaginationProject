@@ -2,11 +2,11 @@ PLATFORM: Slack / Discord (general channels, #self-promo, #showcase, #side-proje
 
 ---
 
-Hey! Quick update — **Project Imagination** is now live on the App Store!
+Hey! Quick update: **Project Imagination** is now live on the App Store!
 
 It's a text-based puzzle game with zero graphics. You enter a chamber, type what you'd do, and the world responds.
 
-20 handcrafted chambers — riddles, mysteries, moral dilemmas. No ads, no in-app purchases.
+20 handcrafted chambers. Riddles, mysteries, moral dilemmas. No ads, no in-app purchases.
 
 Would mean a lot if you checked it out:
 [APP STORE LINK]

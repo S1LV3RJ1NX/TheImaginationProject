@@ -1,10 +1,10 @@
-PLATFORM: Indie Hackers (indiehackers.com) — Post in "Show" section
+PLATFORM: Indie Hackers (indiehackers.com) - Post in "Show" section
 
 TITLE: Building a text-based iOS puzzle game with zero graphics
 
 BODY:
 
-I'm a solo dev building Project Imagination — a text-based exploration game where you type your actions and the world responds with AI narration.
+I'm a solo dev building Project Imagination, a text-based exploration game where you type your actions and the world responds with AI narration.
 
 - 20 handcrafted chambers (riddles, mysteries, moral dilemmas)
 - No ads, no IAP

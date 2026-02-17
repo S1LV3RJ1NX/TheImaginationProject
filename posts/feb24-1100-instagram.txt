@@ -6,7 +6,7 @@ I've been building a text-based exploration game where you type your actions in 
 
 20 handcrafted chambers. Riddles. Mysteries. Moral dilemmas. No ads. No in-app purchases.
 
-The App Store launch is coming soon — join the waitlist to be first in (link in bio).
+The App Store launch is coming soon. Join the waitlist to be first in (link in bio).
 
 #indiegame #textadventure #iOSapp #gamedev #indiedev
 #escaperoompuzzle #projectimagination #buildinpublic

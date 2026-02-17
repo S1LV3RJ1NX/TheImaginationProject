@@ -1,4 +1,4 @@
-Hey! Following up — I'm launching Project Imagination on iOS very soon.
+Hey! Following up. I'm launching Project Imagination on iOS very soon.
 
 A text-based puzzle game where you type what you'd do and the world responds. Think D&D meets escape rooms. No graphics, no ads.
 

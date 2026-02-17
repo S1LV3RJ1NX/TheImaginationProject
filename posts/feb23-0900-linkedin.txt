@@ -1,6 +1,6 @@
 I built a game that reveals how you think.
 
-It doesn't ask you multiple-choice questions. Instead, it drops you into 20 different scenarios — and watches what you do.
+It doesn't ask you multiple-choice questions. Instead, it drops you into 20 different scenarios and watches what you do.
 
 Do you examine every detail before acting, or jump in?
 Do you negotiate, or demand?
@@ -11,6 +11,6 @@ Every chamber in Project Imagination is a different puzzle. And every puzzle rev
 Coming soon to iOS. Join the waitlist to be first:
 https://bit.ly/the-imagination-project
 
-What do you think — would you play a game with zero graphics?
+What do you think? Would you play a game with zero graphics?
 
-#psychology #decisionmaking #selfdiscovery #gamedev #AI
+#AI #Creativity #SelfDiscovery #GameDev #BuildInPublic

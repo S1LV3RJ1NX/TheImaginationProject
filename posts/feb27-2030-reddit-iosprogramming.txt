@@ -1,10 +1,10 @@
 SUBREDDIT: r/iOSProgramming
 
-TITLE: I built an AI-powered text adventure game for iOS — here's the architecture
+TITLE: I built an AI-powered text adventure game for iOS - here's the architecture
 
 BODY:
 
-Just finished building Project Imagination — a text-based puzzle game where the narration is handled by an LLM, but the game logic and state is entirely client-side.
+Just finished building Project Imagination, a text-based puzzle game where the narration is handled by an LLM, but the game logic and state is entirely client-side.
 
 Architecture:
 - Swift/SwiftUI on the client, owns all game state

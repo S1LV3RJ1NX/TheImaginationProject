@@ -8,5 +8,7 @@ No ads. No in-app purchases.
 
 [APP STORE LINK]
 
+#indiedev #gamedev #indiegame #iOS
+
 ---
 NOTE: Replace [APP STORE LINK] with your actual App Store URL.

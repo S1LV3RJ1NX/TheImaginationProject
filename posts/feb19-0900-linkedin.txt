@@ -8,11 +8,11 @@ Project Imagination is a text-based puzzle game. No graphics. No ads. No in-app 
 
 You enter a chamber. You read. You think. You type what you'd do. The world responds.
 
-20 handcrafted chambers — riddles, mysteries, moral dilemmas, social deduction.
+20 handcrafted chambers. Riddles, mysteries, moral dilemmas, social deduction.
 
-It's not for everyone. But if you've ever enjoyed escape rooms, D&D, or lateral thinking puzzles — I think you'd like this.
+It's not for everyone. But if you've ever enjoyed escape rooms, D&D, or lateral thinking puzzles, I think you'd like this.
 
 Launching soon on iOS. Waitlist is open:
 https://bit.ly/the-imagination-project
 
-#indiedev #mobilegaming #buildinpublic #productdesign
+#IndieGames #BuildInPublic #StartupLife #Entrepreneurship #GameDev

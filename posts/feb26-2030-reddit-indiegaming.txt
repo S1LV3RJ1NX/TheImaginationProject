@@ -1,12 +1,12 @@
 SUBREDDIT: r/indiegaming
 
-TITLE: I made a text-based puzzle game with zero graphics — just your words and your mind
+TITLE: I made a text-based puzzle game with zero graphics - just your words and your mind
 
 BODY:
 
 I've been working on Project Imagination for the past few months. It's a text-based exploration game for iOS where you type your actions in plain English and the world responds with AI narration.
 
-20 handcrafted chambers — riddles, whodunit mysteries, moral dilemmas, social persuasion puzzles.
+20 handcrafted chambers. Riddles, whodunit mysteries, moral dilemmas, social persuasion puzzles.
 
 No ads, no in-app purchases, no hand-holding.
 
