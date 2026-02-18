@@ -1,11 +1,13 @@
-Just submitted Project Imagination to the App Store.
+Just submitted to the App Store.
 
-A text-based puzzle game with zero graphics.
-You type what you'd do. The world responds.
-20 chambers that test how you actually think.
+A game with zero graphics.
 
-No ads. No IAP. Just your imagination.
+You enter a chamber. You type what you'd do. The world responds.
 
-Join the waitlist: https://bit.ly/the-imagination-project
+One chamber puts you on a throne. A farmer and a merchant both say the other cheated. You're the judge.
 
-#MarketingMonday #indiedev #gamedev #iOS
+The answer isn't what you think.
+
+https://bit.ly/the-imagination-project
+
+#indiedev #gamedev #buildinpublic #iOS

@@ -17,16 +17,16 @@ Each post below links to a file in `posts/` — open it, copy, paste. Done.
 
 ## PHASE 1: TEASER (Feb 17-22)
 
-### Tuesday, Feb 17 (Today — start from afternoon)
+### Tuesday, Feb 17
 
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 2:00 PM | LinkedIn | Western | [feb17-0900-linkedin.txt](posts/feb17-0900-linkedin.txt) |
-| 7:00 PM | Instagram | India | [feb17-1100-instagram.txt](posts/feb17-1100-instagram.txt) |
-| 8:00 PM | WhatsApp | India | [feb17-2000-whatsapp.txt](posts/feb17-2000-whatsapp.txt) |
-| 10:00 PM | Twitter/X | Western | [feb17-1230-twitter.txt](posts/feb17-1230-twitter.txt) |
+| Time | Platform | Audience | Post file | Status |
+|------|----------|----------|-----------|--------|
+| 2:00 PM | LinkedIn | Western | [feb17-0900-linkedin.txt](posts/feb17-0900-linkedin.txt) | POSTED |
+| 10:00 PM | Twitter/X | Western | [feb17-1230-twitter.txt](posts/feb17-1230-twitter.txt) | POSTED |
 
 **Also today:** Deploy waitlist page. Set up Product Hunt teaser page.
+
+*Instagram and WhatsApp moved to Feb 18 (missed on the 17th).*
 
 ---
 
@@ -34,8 +34,10 @@ Each post below links to a file in `posts/` — open it, copy, paste. Done.
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
-| 7:00 PM | Instagram Story | India | [feb18-1100-instagram-story.txt](posts/feb18-1100-instagram-story.txt) |
-| 8:00 PM | WhatsApp DMs | India | [feb18-2000-whatsapp-dm.txt](posts/feb18-2000-whatsapp-dm.txt) |
+| 7:00 PM | Instagram | India | [feb18-1900-instagram.txt](posts/feb18-1900-instagram.txt) |
+| 7:30 PM | Instagram Story | India | [feb18-1100-instagram-story.txt](posts/feb18-1100-instagram-story.txt) |
+| 8:00 PM | WhatsApp | India | [feb18-2000-whatsapp.txt](posts/feb18-2000-whatsapp.txt) |
+| 8:30 PM | WhatsApp DMs | India | [feb18-2000-whatsapp-dm.txt](posts/feb18-2000-whatsapp-dm.txt) |
 
 **Also today:** Send friend templates to 5-10 close friends — ask them to post Wed/Thu:
 - [friends/whatsapp-templates.txt](posts/friends/whatsapp-templates.txt)

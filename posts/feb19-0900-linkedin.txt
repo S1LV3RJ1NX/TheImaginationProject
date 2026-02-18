@@ -1,18 +1,18 @@
-I built a game because I was tired of how most mobile games treat people.
+You've downloaded dozens of games this year. How many made you actually think?
 
-Flashing lights. Countdown timers. Dopamine traps designed to extract money.
+Not react. Not tap faster. Think.
 
-I wanted the opposite.
+I removed the graphics entirely. What's left is a game that only works if your imagination does.
 
-Project Imagination is a text-based puzzle game. No graphics. No ads. No in-app purchases. No hand-holding.
+You enter a chamber. A farmer and a merchant both accuse each other of cheating. You're the judge. You examine the cow. You count the coins. You find a witness who changes everything.
 
-You enter a chamber. You read. You think. You type what you'd do. The world responds.
+That's one chamber out of twenty.
 
-20 handcrafted chambers. Riddles, mysteries, moral dilemmas, social deduction.
+Project Imagination is a text-based iOS game. You type what you'd do in plain English. The world responds. Every chamber tests something different about how your mind works.
 
-It's not for everyone. But if you've ever enjoyed escape rooms, D&D, or lateral thinking puzzles, I think you'd like this.
-
-Launching soon on iOS. Waitlist is open:
+Launching soon. Waitlist is open:
 https://bit.ly/the-imagination-project
+
+Would you play a game with zero graphics?
 
 #IndieGames #BuildInPublic #StartupLife #Entrepreneurship #GameDev

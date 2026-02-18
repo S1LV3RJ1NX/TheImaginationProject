@@ -1,7 +1,11 @@
-Quick one. I'm launching a game with zero graphics.
+Quick one.
 
-You enter a chamber. You type what you'd do. The world responds.
+A dusty room. A locked box on a pedestal. Three dials on the lock. Most numbers are smooth from age, but three still have sharp edges.
 
-No ads. No in-app purchases. Just puzzles that test how you think.
+You type "examine the lock." The game responds.
+
+That's how this works. No graphics. You type what you'd do. The world responds.
+
+20 chambers. Each one tests how you think.
 
 Waitlist is open: https://bit.ly/the-imagination-project

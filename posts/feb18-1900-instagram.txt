@@ -1,0 +1,16 @@
+CAPTION:
+
+You enter a chamber. You don't know what's inside.
+
+You look around. A stone pedestal. A locked box. Three dials.
+
+You type what you'd do. The world responds.
+
+No graphics. No menus. Just your words and your mind.
+
+Coming soon to iOS.
+
+#indiegame #textadventure #comingsoon #gamedev #buildinpublic
+
+---
+VISUAL IDEA: Black background, green monospace text that reads "You enter a chamber. You don't know what's inside. What do you do?"

@@ -1,16 +1,19 @@
-I built a game that reveals how you think.
+Just submitted Project Imagination to the App Store.
 
-It doesn't ask you multiple-choice questions. Instead, it drops you into 20 different scenarios and watches what you do.
+Here's the thing nobody expects: the most engaging chamber in the game has no visuals, no sound effects, and no animation.
 
-Do you examine every detail before acting, or jump in?
-Do you negotiate, or demand?
-Do you follow the rules, or find a loophole?
+It has a farmer, a merchant, and a dispute over a sick cow.
 
-Every chamber in Project Imagination is a different puzzle. And every puzzle reveals a different side of you.
+You're the judge. You examine evidence. You question witnesses. You make a ruling. And the game quietly tracks whether you rushed to judgment or investigated first.
 
-Coming soon to iOS. Join the waitlist to be first:
-https://bit.ly/the-imagination-project
+That's what happens when you strip away everything except the player's mind. The game becomes a mirror.
 
-What do you think? Would you play a game with zero graphics?
+20 chambers. Each one tests a different part of how you think. Logic. Empathy. Patience. Persuasion.
+
+No ads. No in-app purchases. Just text and your imagination.
+
+Waitlist: https://bit.ly/the-imagination-project
+
+What would your verdict be?
 
 #AI #Creativity #SelfDiscovery #GameDev #BuildInPublic
