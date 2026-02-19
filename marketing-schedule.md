@@ -1,10 +1,10 @@
-# Pre-Launch Posting Schedule — Project Imagination
+# Marketing Schedule — Project Imagination
 
 Timezone: IST (UTC+5:30)
 Target: WhatsApp/Instagram for Indian audience, LinkedIn/Twitter/Reddit for US/UK/EU
-Testing done by: Sunday, Feb 22
-App Store submission: ~Monday, Feb 23
-Expected approval: ~Feb 25-28
+Flutter port complete by: ~March 7
+App Store + Play Store submission: ~March 8-9
+Expected approval: ~March 10-14
 
 Each post below links to a file in `posts/` — open it, copy, paste. Done.
 
@@ -15,140 +15,111 @@ Each post below links to a file in `posts/` — open it, copy, paste. Done.
 
 ---
 
-## PHASE 1: TEASER (Feb 17-22)
+## FEBRUARY (COMPLETED / PAUSED)
 
-### Tuesday, Feb 17
+Posts made in Feb (teaser phase — these set up the March callback):
+- Feb 17: LinkedIn + Twitter (POSTED)
+- Feb 19: Instagram + WhatsApp + LinkedIn + Twitter (POSTED)
 
-| Time | Platform | Audience | Post file | Status |
-|------|----------|----------|-----------|--------|
-| 2:00 PM | LinkedIn | Western | [feb17-0900-linkedin.txt](posts/feb17-0900-linkedin.txt) | POSTED |
-| 10:00 PM | Twitter/X | Western | [feb17-1230-twitter.txt](posts/feb17-1230-twitter.txt) | POSTED |
-
-**Also today:** Deploy waitlist page. Set up Product Hunt teaser page.
-
-*Instagram and WhatsApp from Feb 17-18 were missed. First posts on those platforms start Feb 19.*
+All remaining Feb posts are **cancelled**. Marketing resumes in March with both iOS and Android ready.
 
 ---
 
-### Wednesday, Feb 18 — SKIPPED
+## PHASE 1: CALLBACK TEASERS (Mar 9-12)
 
-No posts made. Schedule picks up from Feb 19.
+Build on the Feb teasers. Theme: "Remember that game? It's ready — and it's on Android too."
 
----
-
-### Wednesday, Feb 19 (TODAY)
+### Monday, Mar 9
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
-| 7:00 PM | Instagram | India | [feb19-1900-instagram.txt](posts/feb19-1900-instagram.txt) |
-| 8:00 PM | WhatsApp | India | [feb19-2000-whatsapp.txt](posts/feb19-2000-whatsapp.txt) |
-| 8:30 PM | WhatsApp DMs | India | [feb18-2000-whatsapp-dm.txt](posts/feb18-2000-whatsapp-dm.txt) |
-| 9:00 PM | LinkedIn | Western | [feb19-0900-linkedin.txt](posts/feb19-0900-linkedin.txt) |
-| 10:00 PM | Twitter/X | Western | [feb19-1230-twitter.txt](posts/feb19-1230-twitter.txt) |
-| 10:30 PM | Reddit r/gamedev | Western | [feb19-2030-reddit-gamedev.txt](posts/feb19-2030-reddit-gamedev.txt) |
+| 8:00 PM | WhatsApp | India | [mar09-2000-whatsapp.txt](posts/mar09-2000-whatsapp.txt) |
+| 9:00 PM | LinkedIn | Western | [mar09-2100-linkedin.txt](posts/mar09-2100-linkedin.txt) |
 
-**Also today:** Send friend templates to 5-10 close friends — ask them to post Thu/Fri:
+**Also today:** Submit to both App Store and Google Play Store.
+
+---
+
+### Tuesday, Mar 10
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 7:00 PM | Instagram | India | [mar10-1900-instagram.txt](posts/mar10-1900-instagram.txt) |
+| 10:00 PM | Twitter/X | Western | [mar10-2200-twitter.txt](posts/mar10-2200-twitter.txt) |
+
+**Also today:** Send friend templates to 5-10 close friends — ask them to post later this week:
 - [friends/whatsapp-templates.txt](posts/friends/whatsapp-templates.txt)
 - [friends/instagram-templates.txt](posts/friends/instagram-templates.txt)
 - [friends/linkedin-templates.txt](posts/friends/linkedin-templates.txt)
 
 ---
 
-### Thursday, Feb 20
+### Wednesday, Mar 11
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
-| 7:00 PM | Instagram | India | [feb20-1900-instagram.txt](posts/feb20-1900-instagram.txt) |
-| 7:30 PM | Instagram Story | India | [feb18-1100-instagram-story.txt](posts/feb18-1100-instagram-story.txt) |
-| 10:30 PM | Reddit r/textadventures | Western | [feb20-2030-reddit-textadventures.txt](posts/feb20-2030-reddit-textadventures.txt) |
+| 7:00 PM | Instagram Story | India | "Submitted to both App Store and Play Store. Waiting..." (organic) |
+| 10:30 PM | Reddit r/gamedev | Western | [mar11-2230-reddit-gamedev.txt](posts/mar11-2230-reddit-gamedev.txt) |
 
 **Also today:** Post in 1-2 Discord indie dev servers — [slack-discord-waitlist.txt](posts/slack-discord-waitlist.txt)
 
-**Friends:** Ask 2-3 friends to post their story templates today (Thu is peak engagement).
+---
+
+### Thursday, Mar 12
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 7:00 PM | Instagram | India | [mar12-1900-instagram.txt](posts/mar12-1900-instagram.txt) |
+| 10:30 PM | Reddit r/textadventures | Western | [mar12-2230-reddit-textadventures.txt](posts/mar12-2230-reddit-textadventures.txt) |
+
+**Friends:** Ask 2-3 friends to post their templates today (Thu is peak engagement).
 
 ---
 
-### Saturday, Feb 21
+## PHASE 2: REVEAL + PUSH (Mar 13-16)
+
+Theme: Building anticipation. App should be in review / approved by now.
+
+### Friday, Mar 13
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 9:00 PM | LinkedIn | Western | [mar13-2100-linkedin.txt](posts/mar13-2100-linkedin.txt) |
+| 10:30 PM | Reddit r/puzzles | Western | [mar13-2230-reddit-puzzles.txt](posts/mar13-2230-reddit-puzzles.txt) |
+
+---
+
+### Saturday, Mar 14
 
 | Time | Platform | Audience | What to do |
 |------|----------|----------|------------|
-| 7:00 PM | Instagram Story | India | Screenshot your waitlist counter + "people already waiting" |
-| 8:00 PM | WhatsApp Status | India | "[X] people on the waitlist. Have you signed up?" |
+| 7:00 PM | Instagram Story | India | Screenshot your waitlist counter + "Both stores. Almost live." |
+| 8:00 PM | WhatsApp Status | India | "[X] people on the waitlist. iOS AND Android this time." |
 
-Light day — no template needed, post organically.
+Light day — post organically.
 
 ---
 
-### Sunday, Feb 22
+### Sunday, Mar 15
 
 No posting. Rest. Review your waitlist numbers.
 
 ---
 
-## PHASE 2: REVEAL + PUSH (Feb 23-28)
-
-### Monday, Feb 23 — Submit to App Store
+### Monday, Mar 16
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
-| 8:00 PM | WhatsApp | India | [feb23-2000-whatsapp.txt](posts/feb23-2000-whatsapp.txt) |
-| 9:00 PM | LinkedIn | Western | [feb23-0900-linkedin.txt](posts/feb23-0900-linkedin.txt) |
-| 10:00 PM | Twitter/X | Western | [feb23-1230-twitter.txt](posts/feb23-1230-twitter.txt) |
-
----
-
-### Tuesday, Feb 24
-
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 7:00 PM | Instagram | India | [feb24-1100-instagram.txt](posts/feb24-1100-instagram.txt) |
-| 8:00 PM | WhatsApp DMs | India | [feb24-2000-whatsapp.txt](posts/feb24-2000-whatsapp.txt) |
-| 10:30 PM | Reddit r/puzzles | Western | [feb24-2030-reddit-puzzles.txt](posts/feb24-2030-reddit-puzzles.txt) |
-
----
-
-### Wednesday, Feb 25
-
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 7:00 PM | Instagram Reel | India | [feb25-1900-instagram-reel.txt](posts/feb25-1900-instagram-reel.txt) |
-| 10:00 PM | Hacker News | Western | [feb25-1400-hackernews.txt](posts/feb25-1400-hackernews.txt) |
-| 10:00 PM | Indie Hackers | Western | [feb25-1400-indiehackers.txt](posts/feb25-1400-indiehackers.txt) |
+| 10:00 PM | Hacker News | Western | [mar16-2200-hackernews.txt](posts/mar16-2200-hackernews.txt) |
+| 10:00 PM | Indie Hackers | Western | [mar16-2200-indiehackers.txt](posts/mar16-2200-indiehackers.txt) |
 
 10 PM IST = 11:30 AM EST = 8:30 AM PST — prime time for HN and Indie Hackers.
 
 ---
 
-### Thursday, Feb 26
+## PHASE 3: LAUNCH DAY (When both stores approve)
 
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 9:00 PM | LinkedIn | Western | [feb26-0900-linkedin.txt](posts/feb26-0900-linkedin.txt) |
-| 10:30 PM | Reddit r/indiegaming | Western | [feb26-2030-reddit-indiegaming.txt](posts/feb26-2030-reddit-indiegaming.txt) |
-
-**Friends:** Ask another round of friends to share their templates.
-
----
-
-### Friday, Feb 27
-
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 7:00 PM | Instagram Story | India | "Waiting for App Store approval..." (organic) |
-| 10:00 PM | Twitter/X | Western | [feb27-1900-twitter.txt](posts/feb27-1900-twitter.txt) |
-| 10:30 PM | Reddit r/iOSProgramming | Western | [feb27-2030-reddit-iosprogramming.txt](posts/feb27-2030-reddit-iosprogramming.txt) |
-
----
-
-### Saturday, Feb 28
-
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 8:00 PM | WhatsApp | India | [feb28-2000-whatsapp.txt](posts/feb28-2000-whatsapp.txt) |
-
----
-
-## PHASE 3: LAUNCH DAY (When App Store approves)
+Target: ~Mar 14-17 (depends on review times)
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
@@ -159,7 +130,35 @@ No posting. Rest. Review your waitlist numbers.
 | 10:00 PM | Twitter/X | Western | [launch-twitter.txt](posts/launch-twitter.txt) |
 | 10:30 PM | Slack / Discord | Western | [slack-discord-launch.txt](posts/slack-discord-launch.txt) |
 
-**Also:** Update index.html — swap waitlist form back to App Store download button.
+**Also:**
+- Update index.html — swap waitlist form to App Store + Play Store download buttons.
+- Post in r/indiegaming and r/InteractiveFiction within 2-3 days of launch.
+
+---
+
+## PHASE 4: POST-LAUNCH PUSH (Launch +1 to +7 days)
+
+### Launch +1 day
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 9:00 PM | LinkedIn | Western | [postlaunch-linkedin.txt](posts/postlaunch-linkedin.txt) |
+| 10:30 PM | Reddit r/indiegaming | Western | [postlaunch-reddit-indiegaming.txt](posts/postlaunch-reddit-indiegaming.txt) |
+
+### Launch +2 days
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 7:00 PM | Instagram | India | Organic post — screenshot first reviews/reactions |
+| 10:30 PM | Reddit r/iOSProgramming | Western | [postlaunch-reddit-iosprogramming.txt](posts/postlaunch-reddit-iosprogramming.txt) |
+
+### Launch +3 days
+
+| Time | Platform | Audience | Post file |
+|------|----------|----------|-----------|
+| 10:00 PM | Twitter/X | Western | Follow-up thread: "3 days since launch. Here's what happened." |
+
+**Friends:** Ask another round of friends to share their templates.
 
 ---
 
@@ -182,6 +181,19 @@ No posting. Rest. Review your waitlist numbers.
 - Screenshot your waitlist counter at milestones (50, 100, 200, 500) for social proof posts
 - **Indian audience (WhatsApp, Instagram): 7:00-8:00 PM IST**
 - **Western audience (LinkedIn, Twitter, Reddit, HN): 9:00-10:30 PM IST**
+
+## REDDIT RULES
+
+Reddit hates self-promotion. But Reddit loves indie devs who are genuine, share their process, and contribute before asking.
+
+- **Contribute first, promote never (directly)** — don't post "check out my game." Post something genuinely interesting and let people discover your game in the comments or your profile.
+- **Use "Show HN" style framing** — "I made this, here's what I learned" not "download my app."
+- **Read each sub's rules** — some have specific self-promo days, some ban links entirely.
+- **Max 1 post per subreddit**, spaced across days, never cross-post the same text.
+
+Target subreddits: r/gamedev (~1.5M), r/puzzles (~800k), r/indiegaming (~700k), r/textadventures (~15k), r/InteractiveFiction (~20k), r/iOSProgramming (~200k)
+
+---
 
 ## REACHING BEYOND YOUR NETWORK
 

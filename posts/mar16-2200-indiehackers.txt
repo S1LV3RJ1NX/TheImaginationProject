@@ -1,0 +1,30 @@
+PLATFORM: Indie Hackers (Show section)
+
+---
+
+Title: I'm a solo dev launching a text-based puzzle game with zero graphics on both iOS and Android
+
+Body:
+
+I've been building Project Imagination for the past few months. It's a text-based exploration game where you type your actions in plain English and the world responds with AI narration.
+
+The pitch: 20 handcrafted puzzle chambers. No graphics. No ads. One-time $2.99 purchase.
+
+Each chamber tests a different kind of thinking -- logic, persuasion, moral reasoning, pattern recognition, lateral thinking. The game tracks your decisions and builds a personality profile at the end.
+
+The build:
+- Started in native Swift (iOS only)
+- Realized most of my testers had Android
+- Rewrote in Flutter to ship both platforms from one codebase
+- Backend is a stateless FastAPI server that proxies LLM calls
+- Game logic runs entirely on the client
+- Total backend cost per player session: ~$0.005
+
+Monetization: one-time IAP to unlock all chambers. No subscription, no ads, no data selling.
+
+The bet: there's a market for people who want a puzzle game that respects their intelligence and their time. No flashing lights, no energy timers, no dark patterns. Just puzzles.
+
+Launching this week:
+https://bit.ly/the-imagination-project
+
+Would love feedback from this community. Anyone else building in the "premium mobile game" space?

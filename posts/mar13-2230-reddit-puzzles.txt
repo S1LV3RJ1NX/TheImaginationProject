@@ -1,0 +1,25 @@
+SUBREDDIT: r/puzzles
+APPROACH: Lead with an actual puzzle. Invite discussion. Don't just link-drop.
+
+---
+
+Title: I design text-based puzzle chambers -- here's one that stumped 80% of playtesters
+
+Body:
+
+I've been building a game called Project Imagination where each level is a text-based chamber with a unique puzzle. You type your actions in plain English and the world responds.
+
+Here's one of my favorites:
+
+You enter a room with a locked door, a mirror, a candle, and an inscription that reads "only the truthful may pass." There's a stranger in the corner who answers every question you ask. But you don't know if they're lying.
+
+The catch: you can't just ask "are you lying?" -- that didn't work for any of my playtesters. The solution requires thinking about the structure of the problem differently.
+
+Playtesters who tried brute-force logic got stuck. The ones who reframed the problem solved it in three moves.
+
+There are 20 chambers like this. Some are logic puzzles. Some are moral dilemmas. Some require you to persuade an NPC. Some are lateral thinking challenges where the room itself is the clue.
+
+Launching this week on iOS and Android:
+https://bit.ly/the-imagination-project
+
+Without spoiling it -- how would you approach that chamber?

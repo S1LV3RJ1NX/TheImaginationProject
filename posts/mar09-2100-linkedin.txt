@@ -1,0 +1,22 @@
+A few weeks ago I posted about a game I was building. No graphics. Just text.
+
+Some of you signed up for the waitlist. Some of you asked: "Will it work on Android?"
+
+The answer is now yes.
+
+I rewrote the entire app in Flutter. Same 20 handcrafted chambers. Same AI narration. Same personality profiling. But now it runs on both iOS and Android.
+
+Here's what the game actually looks like:
+
+You enter a dusty room. A locked box sits on a table. Three dials on the lock. Most numbers are worn smooth, but three still have sharp edges. A faded note reads: "In order, they open the path."
+
+You type what you'd do. The world responds.
+
+Some chambers test logic. Others test persuasion. Others test whether you'd sacrifice one person to save five.
+
+Submitting to both stores this week. If you want to be first in:
+https://bit.ly/the-imagination-project
+
+Would you play a game with zero graphics?
+
+#IndieGames #BuildInPublic #GameDev #AI #Innovation

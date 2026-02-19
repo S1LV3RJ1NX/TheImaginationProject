@@ -6,7 +6,7 @@ STORY TEMPLATE A: Screenshot + Text overlay:
 
 My friend built a game with ZERO graphics.
 You just type what you'd do. It's wild.
-Launching soon. Check it out
+Available on both iPhone and Android
 
 + Add link sticker: https://bit.ly/the-imagination-project
 
@@ -20,7 +20,7 @@ It's a text-based puzzle game. No graphics at all.
 You type your actions and the world responds.
 Think escape rooms meets D&D.
 
-My friend made it and it's launching on iOS soon.
+My friend made it. Works on both iOS and Android.
 
 + Add link sticker: https://bit.ly/the-imagination-project
 
@@ -30,7 +30,7 @@ STORY TEMPLATE C: Minimal:
 
 A game with no graphics.
 Just your words and your mind.
-20 chambers. Coming soon.
+20 chambers. Available now.
 
 + Add link sticker: https://bit.ly/the-imagination-project
 
@@ -47,7 +47,7 @@ Riddles, mysteries, moral dilemmas. 20 handcrafted chambers.
 
 No ads. No in-app purchases. Just your brain.
 
-It's called Project Imagination and it's launching soon on iOS.
-Join the waitlist: https://bit.ly/the-imagination-project
+It's called Project Imagination. Available on both iOS and Android.
+Check it out: https://bit.ly/the-imagination-project
 
 #indiegame #projectimagination #textadventure #supportindiedevs

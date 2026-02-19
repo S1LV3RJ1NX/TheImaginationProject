@@ -1,0 +1,17 @@
+CAPTION:
+
+A locked room. A stranger who answers every question. An inscription that reads "only the truthful may pass."
+
+You don't know if the stranger is lying.
+
+What do you do?
+
+That's one of 20 chambers in Project Imagination. No graphics. No hand-holding. Just your words against the puzzle.
+
+Coming this week to both iOS and Android. Link in bio.
+
+#indiegame #textadventure #mobilegaming #gamedev #indiedev
+#projectimagination #escaperoompuzzle #buildinpublic
+
+---
+VISUAL: Black background, green monospace text showing the chamber description above. Terminal aesthetic.

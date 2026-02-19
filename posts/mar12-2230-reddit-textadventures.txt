@@ -1,0 +1,29 @@
+SUBREDDIT: r/textadventures
+APPROACH: Core audience. Be genuine, share design philosophy, invite feedback.
+
+---
+
+Title: Built a modern text adventure with AI narration and NLP input -- 20 handcrafted chambers, no parser commands
+
+Body:
+
+Hey everyone. I built Project Imagination because I wanted to bring text adventures to mobile without the parser friction.
+
+No "GET LAMP" or "GO NORTH." You type what you'd actually do: "I pick up the lamp and look around" or "I ask the guard why the door is locked." The AI handles the natural language and narrates the world's response.
+
+But -- and this was the hard design problem -- the AI doesn't control game state. Every chamber has hand-designed logic with specific solutions and multiple paths. The AI narrates the experience, it doesn't run it. This means puzzles are consistent and solvable, not randomly generated.
+
+20 chambers in total:
+- Logic puzzles (combination locks, pattern recognition)
+- Social puzzles (convince an NPC, negotiate a trade)
+- Moral dilemmas (sacrifice one to save many?)
+- Mystery chambers (figure out who did it from clues)
+- Riddles and lateral thinking challenges
+
+Each chamber is self-contained, about 10-15 minutes to solve. The game also tracks your decisions across all chambers and builds a personality profile at the end.
+
+Originally built for iOS, now on Android too (Flutter rewrite).
+
+Launching this week: https://bit.ly/the-imagination-project
+
+I know AI in interactive fiction is a hot topic in this community. I went with a hybrid approach specifically because I didn't want the AI making up puzzle solutions. Would love to hear your take on that tradeoff.

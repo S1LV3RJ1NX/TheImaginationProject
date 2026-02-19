@@ -1,0 +1,29 @@
+SUBREDDIT: r/gamedev
+APPROACH: "Lessons learned" / dev diary. Contribute first, link second.
+
+---
+
+Title: I spent months building a game with zero graphics. Then I rewrote it in Flutter to reach Android. Here's what I learned.
+
+Body:
+
+Project Imagination is a text-based puzzle game. No sprites, no 3D, no pixel art. You type what you'd do in plain English and the world responds with AI narration.
+
+I built it first in native Swift. 20 handcrafted chambers -- riddles, moral dilemmas, whodunit mysteries, social persuasion puzzles. Then I realized most of my playtesters had Android phones. So I rewrote the whole thing in Flutter.
+
+Things I learned:
+
+1. Writing is harder than coding. Designing 20 unique puzzle chambers with multiple solution paths took longer than the entire codebase. Twice.
+
+2. AI narration needs a leash. Without strict game logic, the LLM would "solve" puzzles for players or invent items that don't exist. The fix: AI handles narration only. All game state and puzzle logic runs on the client.
+
+3. Playtesting text games is brutal. You can't watch someone struggle -- you have to read their transcript and figure out where they got lost.
+
+4. The Flutter port was smoother than I expected. The game engine is pure logic (no platform APIs), so it ported almost 1:1 to Dart. The UI was the main work.
+
+5. "No graphics" is a feature, not a limitation. Players project their own imagery. Two people play the same chamber and describe completely different mental pictures.
+
+Launching on both iOS and Android this week:
+https://bit.ly/the-imagination-project
+
+Curious if anyone else has worked on text-based or narrative games -- what were your biggest challenges?

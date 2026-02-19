@@ -1,8 +1,0 @@
-STORY SEQUENCE (6 frames: post as separate stories):
-
-Frame 1: "What if a game had zero graphics?"
-Frame 2: "No sprites. No 3D. Just text."
-Frame 3: "You type what you'd do. The world responds."
-Frame 4: "20 chambers. Each one different."
-Frame 5: [Screenshot of gameplay]
-Frame 6: "Join the waitlist. Link in bio" + add link sticker to https://bit.ly/the-imagination-project

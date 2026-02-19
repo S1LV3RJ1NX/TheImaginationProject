@@ -1,8 +1,0 @@
-I've been building something for the last few months.
-
-No graphics. No tutorials. No hand-holding.
-
-Just you, a text prompt, and 20 chambers that will test how you actually think.
-
-It's almost ready. If you're curious:
-https://bit.ly/the-imagination-project

@@ -4,8 +4,9 @@ BODY:
 
 You signed up for the waitlist. Thank you for believing in a game with no graphics.
 
-Project Imagination is now available on the App Store:
+Project Imagination is now available on the App Store and Google Play:
 [APP STORE LINK]
+[PLAY STORE LINK]
 
 20 handcrafted chambers. Riddles, mysteries, moral dilemmas.
 No ads. No in-app purchases. Just your words and your mind.
@@ -15,5 +16,5 @@ I'd love to hear what you think. Reply to this email anytime.
 - Prathamesh
 
 ---
-NOTE: Replace [APP STORE LINK] with your actual App Store URL.
+NOTE: Replace [APP STORE LINK] and [PLAY STORE LINK] with your actual store URLs.
 Send via "Yet Another Mail Merge" from your Google Sheet.

@@ -1,0 +1,28 @@
+PLATFORM: Hacker News (Show HN)
+
+---
+
+Title: Show HN: A text-based puzzle game with AI narration and zero graphics (iOS + Android)
+
+Body:
+
+I built Project Imagination -- a text-based exploration game where you type actions in plain English and an AI narrates the world's response.
+
+20 hand-designed chambers: riddles, moral dilemmas, whodunit mysteries, social deduction. Each one is self-contained (~15 min).
+
+The interesting technical problem: making AI narration feel consistent without giving the AI control over puzzle state.
+
+Architecture:
+- Flutter client owns all game state and puzzle logic
+- FastAPI backend acts as a stateless LLM proxy
+- HMAC-signed requests for API authentication
+- Discovery engine runs locally: keyword matching + intent classification determines what the player found
+- AI narrates the result but cannot alter game state
+
+The AI doesn't know the solution. It only knows what just happened and how to describe it. This prevents the common failure mode where an LLM "solves" the puzzle for the player or invents items that don't exist.
+
+Originally built in native Swift, rewrote in Flutter to ship on both platforms.
+
+No ads. No tracking. One-time $2.99 purchase.
+
+https://bit.ly/the-imagination-project

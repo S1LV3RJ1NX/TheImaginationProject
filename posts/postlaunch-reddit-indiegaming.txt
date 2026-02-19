@@ -1,0 +1,35 @@
+SUBREDDIT: r/indiegaming
+APPROACH: Genuine showcase. Show, don't sell. Invite feedback.
+
+---
+
+Title: I made a text-based puzzle game with zero graphics -- just launched on iOS and Android
+
+Body:
+
+Just launched Project Imagination. It's a text-based exploration game where you type your actions in plain English and the world responds with AI narration.
+
+Here's the opening of one chamber:
+
+"You stand in a circular room. Seven doors line the walls, each marked with a symbol. In the center, a pedestal holds a brass compass that spins slowly. The needle doesn't point north -- it points at you."
+
+You type what you'd do. The game responds. Every chamber has a specific solution (or multiple paths), but the AI narration makes each playthrough feel different.
+
+20 chambers total:
+- Combination locks and pattern puzzles
+- A courtroom where you're the judge
+- A stranger who answers every question (but might be lying)
+- A room that changes every time you look away
+- Moral dilemmas with no right answer
+
+The game also tracks how you play and builds a personality profile at the end.
+
+No ads. No in-app purchases after the initial unlock. No hand-holding.
+
+iOS: [APP STORE LINK]
+Android: [PLAY STORE LINK]
+
+Happy to answer questions about the design or tech. Would love to hear feedback from anyone who tries it.
+
+---
+NOTE: Replace [APP STORE LINK] and [PLAY STORE LINK] with your actual store URLs.

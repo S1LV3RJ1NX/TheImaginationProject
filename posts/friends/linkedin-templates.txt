@@ -12,7 +12,7 @@ Project Imagination is a text-based puzzle game. No graphics, no ads, no in-app 
 
 It also builds a personality profile based on your decisions. How you think under pressure, whether you're methodical or impulsive.
 
-It's launching soon on iOS. If this sounds like your kind of thing:
+It's available on both iOS and Android:
 https://bit.ly/the-imagination-project
 
 #indiegame #projectimagination #supportindiedevs
@@ -21,15 +21,15 @@ https://bit.ly/the-imagination-project
 
 TEMPLATE B: Shorter / Casual:
 
-Came across something interesting. A friend built an iOS game with literally zero graphics.
+Came across something interesting. A friend built a game with literally zero graphics.
 
 It's all text-based. You type what you'd do, and the world responds. Think D&D meets escape rooms.
 
 No ads. No in-app purchases. 20 handcrafted chambers.
 
-Launching soon, waitlist is open: https://bit.ly/the-imagination-project
+Available on both App Store and Play Store: https://bit.ly/the-imagination-project
 
-#indiedev #textadventure #iOSgames
+#indiedev #textadventure #mobilegaming
 
 ---
 
@@ -43,4 +43,4 @@ A friend built exactly that. Project Imagination. You enter chambers, type what 
 
 I thought it was weird at first. Then I tried it.
 
-Waitlist: https://bit.ly/the-imagination-project
+Available on iOS and Android: https://bit.ly/the-imagination-project

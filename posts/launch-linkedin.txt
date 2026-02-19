@@ -1,4 +1,4 @@
-Project Imagination is live on the App Store.
+Project Imagination is live on the App Store and Google Play.
 
 A dusty room. A locked box. Three dials on the lock. Most numbers are worn smooth, but three still have sharp edges. A faded note reads: "In order, they open the path."
 
@@ -12,11 +12,13 @@ No graphics. No ads. No in-app purchases. Just text and your imagination.
 
 Thank you to everyone who joined the waitlist and believed in a game with no visuals.
 
-Download: [APP STORE LINK]
+Download:
+iOS: [APP STORE LINK]
+Android: [PLAY STORE LINK]
 
 I'd love to hear what you think.
 
 #GameDev #IndieGames #BuildInPublic #AI #Innovation
 
 ---
-NOTE: Replace [APP STORE LINK] with your actual App Store URL.
+NOTE: Replace [APP STORE LINK] and [PLAY STORE LINK] with your actual store URLs.

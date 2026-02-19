@@ -1,0 +1,39 @@
+SUBREDDIT: r/iOSProgramming
+APPROACH: Technical architecture post. Share decisions, not the game.
+
+---
+
+Title: I built a puzzle game in native Swift, then rewrote it in Flutter to ship on Android too -- here's what the port looked like
+
+Body:
+
+Just launched Project Imagination -- a text-based puzzle game with AI narration. Originally built in Swift/SwiftUI, I rewrote it in Flutter to ship on both iOS and Android.
+
+The port breakdown:
+
+**What ported easily (~1:1):**
+- Game engine (DiscoveryEngine, TraitTracker, SolutionValidator, HintEvaluator) -- pure logic, no platform dependencies. Swift Foundation -> Dart core.
+- Models (Codable structs -> Dart classes with json_serializable)
+- Static data (1,700 lines of room configs, 500 lines of journal content) -- just data structure conversion.
+
+**What took real work:**
+- SSE streaming client. URLSession + URLSessionDataDelegate -> custom stream parser over Dio. Flutter's SSE ecosystem is less mature.
+- State management. Combine (@Published, @StateObject, ObservableObject) -> Riverpod providers. The conceptual mapping is clean but the syntax is completely different.
+- StoreKit 2 -> in_app_purchase package. Had to handle both Apple and Google billing flows.
+- CryptoKit HMAC -> crypto package. Straightforward but fiddly with device ID differences.
+
+**What was surprisingly better in Flutter:**
+- Hot reload. Coming from SwiftUI previews, this was a major productivity boost.
+- Single codebase for both platforms. No more "will this look right on Android?"
+
+**The gotcha I didn't expect:**
+UserDefaults persistence. Flutter's shared_preferences prefixes keys with "flutter." by default. If you're migrating from native, you need setPrefix('') or your users lose their data. (I only had 2 testers so I just asked them to reinstall.)
+
+Total port time: ~3 weeks with AI assistance for the mechanical parts.
+
+The app: https://bit.ly/the-imagination-project
+
+Happy to go deeper on any of these if people are curious.
+
+---
+NOTE: Replace link with actual store URL if preferred.

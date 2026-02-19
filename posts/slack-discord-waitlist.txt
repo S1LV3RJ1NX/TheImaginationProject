@@ -4,13 +4,13 @@ PLATFORM: Slack / Discord (general channels, #self-promo, #showcase, #side-proje
 
 Hey everyone! I've been working on a side project and would love to share it.
 
-**Project Imagination** is a text-based puzzle game for iOS. No graphics at all. You enter a chamber, type what you'd do in plain English, and the world responds with AI narration.
+**Project Imagination** is a text-based puzzle game for iOS and Android. No graphics at all. You enter a chamber, type what you'd do in plain English, and the world responds with AI narration.
 
 20 handcrafted chambers. Riddles, whodunit mysteries, moral dilemmas, social deduction. Each one tests a different side of how you think.
 
 No ads. No in-app purchases. No hand-holding.
 
-I'm running a waitlist before the App Store launch to gauge interest:
+I'm running a waitlist before launch to gauge interest:
 https://bit.ly/the-imagination-project
 
 Would love feedback on the concept, and a signup if it sounds like your kind of thing!
