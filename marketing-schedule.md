@@ -26,48 +26,45 @@ Each post below links to a file in `posts/` — open it, copy, paste. Done.
 
 **Also today:** Deploy waitlist page. Set up Product Hunt teaser page.
 
-*Instagram and WhatsApp moved to Feb 18 (missed on the 17th).*
+*Instagram and WhatsApp from Feb 17-18 were missed. First posts on those platforms start Feb 19.*
 
 ---
 
-### Wednesday, Feb 18
+### Wednesday, Feb 18 — SKIPPED
+
+No posts made. Schedule picks up from Feb 19.
+
+---
+
+### Wednesday, Feb 19 (TODAY)
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
-| 7:00 PM | Instagram | India | [feb18-1900-instagram.txt](posts/feb18-1900-instagram.txt) |
-| 7:30 PM | Instagram Story | India | [feb18-1100-instagram-story.txt](posts/feb18-1100-instagram-story.txt) |
-| 8:00 PM | WhatsApp | India | [feb18-2000-whatsapp.txt](posts/feb18-2000-whatsapp.txt) |
+| 7:00 PM | Instagram | India | [feb19-1900-instagram.txt](posts/feb19-1900-instagram.txt) |
+| 8:00 PM | WhatsApp | India | [feb19-2000-whatsapp.txt](posts/feb19-2000-whatsapp.txt) |
 | 8:30 PM | WhatsApp DMs | India | [feb18-2000-whatsapp-dm.txt](posts/feb18-2000-whatsapp-dm.txt) |
+| 9:00 PM | LinkedIn | Western | [feb19-0900-linkedin.txt](posts/feb19-0900-linkedin.txt) |
+| 10:00 PM | Twitter/X | Western | [feb19-1230-twitter.txt](posts/feb19-1230-twitter.txt) |
+| 10:30 PM | Reddit r/gamedev | Western | [feb19-2030-reddit-gamedev.txt](posts/feb19-2030-reddit-gamedev.txt) |
 
-**Also today:** Send friend templates to 5-10 close friends — ask them to post Wed/Thu:
+**Also today:** Send friend templates to 5-10 close friends — ask them to post Thu/Fri:
 - [friends/whatsapp-templates.txt](posts/friends/whatsapp-templates.txt)
 - [friends/instagram-templates.txt](posts/friends/instagram-templates.txt)
 - [friends/linkedin-templates.txt](posts/friends/linkedin-templates.txt)
 
 ---
 
-### Thursday, Feb 19
-
-| Time | Platform | Audience | Post file |
-|------|----------|----------|-----------|
-| 7:00 PM | Instagram | India | [feb19-1900-instagram.txt](posts/feb19-1900-instagram.txt) |
-| 8:00 PM | WhatsApp groups | India | [feb19-2000-whatsapp.txt](posts/feb19-2000-whatsapp.txt) |
-| 9:00 PM | LinkedIn | Western | [feb19-0900-linkedin.txt](posts/feb19-0900-linkedin.txt) |
-| 10:00 PM | Twitter/X | Western | [feb19-1230-twitter.txt](posts/feb19-1230-twitter.txt) |
-| 10:30 PM | Reddit r/gamedev | Western | [feb19-2030-reddit-gamedev.txt](posts/feb19-2030-reddit-gamedev.txt) |
-
-**Friends:** Ask 2-3 friends to post their story templates today (Thu is peak engagement).
-
----
-
-### Friday, Feb 20
+### Thursday, Feb 20
 
 | Time | Platform | Audience | Post file |
 |------|----------|----------|-----------|
 | 7:00 PM | Instagram | India | [feb20-1900-instagram.txt](posts/feb20-1900-instagram.txt) |
+| 7:30 PM | Instagram Story | India | [feb18-1100-instagram-story.txt](posts/feb18-1100-instagram-story.txt) |
 | 10:30 PM | Reddit r/textadventures | Western | [feb20-2030-reddit-textadventures.txt](posts/feb20-2030-reddit-textadventures.txt) |
 
 **Also today:** Post in 1-2 Discord indie dev servers — [slack-discord-waitlist.txt](posts/slack-discord-waitlist.txt)
+
+**Friends:** Ask 2-3 friends to post their story templates today (Thu is peak engagement).
 
 ---
 
