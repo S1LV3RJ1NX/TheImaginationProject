@@ -25,6 +25,48 @@ All remaining Feb posts are **cancelled**. Marketing resumes in March with both 
 
 ---
 
+## PRE-LAUNCH REELS (Feb 20 - Mar 8)
+
+Casual, unpolished dev Reels during the Flutter port. No editing required. Phone propped up filming your screen, 15-30 seconds, text overlay telling the story. Post whenever something interesting happens -- no fixed schedule.
+
+**Reel 1 (Week 1 of port):** "Rewriting my entire app because my friends have Android"
+- Film: your screen with the Flutter project being created, terminal scrolling
+- Text overlay: "Built an iOS app. Most of my friends have Android. So I'm rewriting the whole thing in Flutter."
+- End card: "Follow for the journey"
+- Audio: trending lo-fi or chill beat
+
+**Reel 2 (Week 1-2):** "11,000 lines of Swift. Zero lines of Dart. Let's go."
+- Film: split screen -- Xcode on left, VS Code/Cursor on right. Swift file on one side, empty Dart file on the other.
+- Time-lapse of code appearing on the Dart side.
+- Text overlay: the line count changing (11,000 -> 8,000 -> 5,000 -> done)
+
+**Reel 3 (Week 2):** "The moment it ran on Android for the first time"
+- Film: Android emulator booting the app. The dark terminal UI appearing.
+- Genuine reaction optional. Keep it real.
+- Text overlay: "3 years of iPhone. First time seeing my app on Android."
+- This one has viral potential -- the "first time" moment is universally relatable.
+
+**Reel 4 (Week 2-3):** "A game with zero graphics. Here's what it looks like."
+- Screen record an actual chamber being played. Show the SSE text streaming in real-time.
+- Blur or cut before any spoilers.
+- Text overlay: "You type what you'd do. The world responds."
+- End card: "Launching soon. Link in bio."
+
+**Reel 5 (Week 3, pre-launch):** "Same app. Two phones."
+- Film: iPhone and Android side by side, both running the app, both showing the same chamber.
+- Text overlay: "Built it once. Runs everywhere."
+- This is the payoff Reel -- shows the Flutter port worked.
+
+**Tips for dev Reels:**
+- Raw > polished. Desk, coffee, terminal. Not a studio.
+- Hook in the first 1-2 seconds (text overlay + movement)
+- Use trending audio but keep it quiet -- the visual is the story
+- Hashtags: #buildinpublic #indiedev #gamedev #flutter #mobilegaming
+- Post between 7-8 PM IST for Indian audience reach
+- Cross-post as TikTok if you have an account (same content works)
+
+---
+
 ## PHASE 1: CALLBACK TEASERS (Mar 9-12)
 
 Build on the Feb teasers. Theme: "Remember that game? It's ready — and it's on Android too."
